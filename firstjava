@@ -11,7 +11,7 @@ y = sct.nextInt();
 System.out.println("Before Swapping\nz = "+z+"\ny = "+y);
 temp = z;   //Swapping is done
 z = y;
-y = temp;
+y = pom;
 System.out.println("After Swapping\nz = "+z+"\ny = "+y);
 }
 }
