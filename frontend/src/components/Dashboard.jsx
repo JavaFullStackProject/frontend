@@ -1,12 +1,22 @@
-import React from 'react'
+import Footer from "./pages/Footer";
+import HeroSection from "./pages/HeroSection";
+// import Navbar from "./pages/Navbar";
+import QuickActions from "./pages/QuickActions";
+import UpcomingTrips from "./pages/UpcomingTrips";
 
 const Dashboard = () => {
   return (
-    <div className="container mt-4">
-      <h2>Welcome to the Dashboard</h2>
-      <p>This is a protected route. Only logged-in users can see this.</p>
-    </div>
-  )
-}
+    <>
+      {/* <Navbar /> */}
+      <HeroSection />
 
-export default Dashboard
+      <div className="container">
+        <QuickActions />
+        <UpcomingTrips />
+      </div>
+      <Footer />
+    </>
+  );
+};
+
+export default Dashboard;

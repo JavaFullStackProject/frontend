@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Register from "./components/Register";
 import Login from "./components/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -8,44 +13,60 @@ import Logout from "./components/Logout";
 import PlanTrip from "./components/PlanTrip";
 import TripList from "./components/TripList";
 import EditTrip from "./components/EditTrip";
+import Home from "./components/pages/Home";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./components/pages/Navbar";
 
 function App() {
   return (
     <Router>
-      <nav className="navbar navbar-expand navbar-light bg-light px-3 d-flex justify-content-end">
-        <Link to="/register" className="nav-link ">Register</Link>
-        <Link to="/login" className="nav-link ms-5">Login</Link>
-        <Link to="/dashboard" className="nav-link ms-5">Dashboard</Link>
-        <Link to="/logout" className="nav-link ms-5">Logout</Link>
-        <Link to="/plan-trip" className="nav-link ms-5">Plan Trip</Link>
-        <Link to="/trips" className="nav-link ms-5">My Trips</Link>
+      {/* Navigation bar that appears on all pages */}
+      <Navbar />
 
-      </nav>
-
+      {/* Route configuration */}
       <Routes>
+        {/* Public Routes - accessible to all users */}
+        <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={
-          <ProtectedRoute>
-            <Dashboard />
-          </ProtectedRoute>
-        } />
-        <Route path="/plan-trip" element={
-          <ProtectedRoute>
-            <PlanTrip />
-          </ProtectedRoute>
-        } />
-        <Route path="/trips" element={
-          <ProtectedRoute>
-            <TripList />
-          </ProtectedRoute>
-        } />
-        <Route path="/edit-trip/:id" element={
-          <ProtectedRoute>
-            <EditTrip />
-          </ProtectedRoute>
-        } />
         <Route path="/logout" element={<Logout />} />
+
+        {/* Protected Routes - only accessible to authenticated users */}
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/plan-trip"
+          element={
+            <ProtectedRoute>
+              <PlanTrip />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/trips"
+          element={
+            <ProtectedRoute>
+              <TripList />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/edit-trip/:id"
+          element={
+            <ProtectedRoute>
+              <EditTrip />
+            </ProtectedRoute>
+          }
+        />
+
+        {/* Catch-all route for undefined paths - redirects to home */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
   );
