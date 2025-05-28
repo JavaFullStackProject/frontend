@@ -1,10 +1,13 @@
 import React, { useState } from "react";
-import Api from "../Api";
 import { useNavigate } from "react-router-dom";
+import Api from "../Api";
+import { Eye, EyeSlash, ArrowRight } from "react-bootstrap-icons";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -15,26 +18,88 @@ function Login() {
       const res = await Api.post("/auth/login", loginData);
       localStorage.setItem("token", res.data);
       alert("Login successful!");
-      navigate("/dashboard")
+      navigate("/dashboard");
     } catch (err) {
       alert("Login failed: " + (err.response?.data || err.message));
     }
   };
 
   return (
-    <div className="container mt-4">
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-3">
-          <label>Email</label>
-          <input type="email" className="form-control" value={email} onChange={(e) => setEmail(e.target.value)} required />
+    <div className="container-fluid vh-100 bg-light">
+      <div className="row h-100 justify-content-center align-items-center">
+        <div className="col-md-8 col-lg-6">
+          <div className="card shadow">
+            <div className="row g-0">
+              {/* Left Side - Branding */}
+              <div className="col-md-5 d-none d-md-flex bg-primary text-white p-5 flex-column justify-content-center">
+                <div className="text-center">
+                  <div className="bg-white rounded-circle d-inline-flex p-3 mb-3">
+                    <ArrowRight className="text-primary fs-4" />
+                  </div>
+                  <h2 className="mb-3">Travel Connect</h2>
+                  <p className="small">
+                    Sign in to access your global travel dashboard
+                  </p>
+                </div>
+              </div>
+
+              {/* Right Side - Form */}
+              <div className="col-md-7">
+                <div className="card-body p-4 p-md-5">
+                  <h2 className="mb-3">Welcome back</h2>
+                  <p className="text-muted mb-4">Sign in to your account</p>
+
+                  <form onSubmit={handleSubmit}>
+                    <div className="mb-3">
+                      <label className="form-label">Email</label>
+                      <input
+                        type="email"
+                        className="form-control"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                      />
+                    </div>
+
+                    <div className="mb-4">
+                      <label className="form-label">Password</label>
+                      <div className="input-group">
+                        <input
+                          type={showPassword ? "text" : "password"}
+                          className="form-control"
+                          value={password}
+                          onChange={(e) => setPassword(e.target.value)}
+                          required
+                        />
+                        <button
+                          type="button"
+                          className="btn btn-outline-secondary"
+                          onClick={() => setShowPassword(!showPassword)}
+                        >
+                          {showPassword ? <EyeSlash /> : <Eye />}
+                        </button>
+                      </div>
+                    </div>
+
+                    <button
+                      type="submit"
+                      className="btn btn-primary w-100 mb-3"
+                    >
+                      Login <ArrowRight className="ms-2" />
+                    </button>
+
+                    <div className="text-center">
+                      <a href="#" className="text-decoration-none small">
+                        Forgot password?
+                      </a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="mb-3">
-          <label>Password</label>
-          <input type="password" className="form-control" value={password} onChange={(e) => setPassword(e.target.value)} required />
-        </div>
-        <button className="btn btn-success">Login</button>
-      </form>
+      </div>
     </div>
   );
 }

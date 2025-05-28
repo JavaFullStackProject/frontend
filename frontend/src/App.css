@@ -40,3 +40,33 @@
 .read-the-docs {
   color: #888;
 }
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.z-1 {
+  z-index: 2 !important;
+  position: relative;
+}
+
+.text-shadow-dark {
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.text-shadow-light {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.quick-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.quick-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+html {
+  scroll-behavior: smooth;
+}
