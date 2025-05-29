@@ -47,7 +47,7 @@ const HeroSection = () => {
             </p>
             <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center">
               <button
-                onClick={() => navigate("/plantrip")}
+                onClick={() => navigate("/plan-trip")}
                 className="btn btn-light btn-lg px-4 py-3 rounded-pill fw-semibold shadow-sm"
               >
                 Plan a New Trip

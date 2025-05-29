@@ -27,7 +27,7 @@ const PlanTrip = () => {
 
   return (
     <div
-      className="d-flex align-items-center justify-content-center min-vh-100 text-dark"
+      className="d-flex align-items-center justify-content-center min-vh-100 text-dark mt-4"
       style={{
         backgroundImage:
           "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1470&q=80')",
