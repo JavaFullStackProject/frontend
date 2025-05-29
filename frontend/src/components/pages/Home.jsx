@@ -15,28 +15,41 @@ function Home() {
 
   return (
     <div>
-      {/* Hero Section with Travel Background */}
+      {/* Hero Section with Background Video */}
       <div
-        className="container-fluid text-white text-center d-flex align-items-center justify-content-center"
-        style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "90vh",
-        }}
+        className="position-relative container-fluid px-0"
+        style={{ height: "90vh" }}
       >
-        <div className="bg-dark bg-opacity-50 p-5 rounded">
-          <h1 className="display-3 fw-bold">Welcome to Travel Planner</h1>
-          <p className="lead">
-            Plan, manage, and explore your adventures with ease.
-          </p>
-          <div className="mt-4">
-            <Link to="/register" className="btn btn-light btn-lg me-3">
-              Get Started
-            </Link>
-            <Link to="/login" className="btn btn-outline-light btn-lg">
-              Login
-            </Link>
+        {/* Video Background */}
+        <video
+          className="w-100 h-100 position-absolute top-0 start-0 object-fit-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source
+            src="https://videos.pexels.com/video-files/1851190/1851190-sd_640_360_25fps.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+
+        {/* Overlay Content */}
+        <div className="position-relative text-white text-center d-flex align-items-center justify-content-center h-100 bg-dark bg-opacity-50">
+          <div className="p-5 rounded">
+            <h1 className="display-3 fw-bold">Welcome to Travel Planner</h1>
+            <p className="lead">
+              Plan, manage, and explore your adventures with ease.
+            </p>
+            <div className="mt-4">
+              <Link to="/register" className="btn btn-light btn-lg me-3">
+                Get Started
+              </Link>
+              <Link to="/login" className="btn btn-outline-light btn-lg">
+                Login
+              </Link>
+            </div>
           </div>
         </div>
       </div>

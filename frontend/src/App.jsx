@@ -16,6 +16,11 @@ import EditTrip from "./components/EditTrip";
 import Home from "./components/pages/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/pages/Navbar";
+import TravelGuidesCard from "./components/cards/TravelGuidesCard";
+import UpcomingTripsCard from "./components/cards/UpcomingTripsCard";
+import SettingsCard from "./components/cards/SettingsCard.";
+
+//for  cards
 
 function App() {
   return (
@@ -30,7 +35,9 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/logout" element={<Logout />} />
-
+        <Route path="/travel-guides" element={<TravelGuidesCard />} />
+        <Route path="upcoming-trips" element={<UpcomingTripsCard />} />
+        <Route path="settings" element={<SettingsCard />} />
         {/* Protected Routes - only accessible to authenticated users */}
         <Route
           path="/dashboard"
