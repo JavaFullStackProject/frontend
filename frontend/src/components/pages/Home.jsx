@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
+import TopServiceNav from './TopServiceNav';
+
 
 function Home() {
   const navigate = useNavigate();
@@ -19,7 +21,7 @@ function Home() {
       <div
         className="position-relative container-fluid px-0"
         style={{ height: "90vh" }}
-      >
+      > 
         {/* Video Background */}
         <video
           className="w-100 h-100 position-absolute top-0 start-0 object-fit-cover"
@@ -29,7 +31,7 @@ function Home() {
           playsInline
         >
           <source
-            src="https://videos.pexels.com/video-files/1851190/1851190-sd_640_360_25fps.mp4"
+            src="https://videos.pexels.com/video-files/2519660/2519660-uhd_2560_1440_24fps.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
@@ -53,6 +55,10 @@ function Home() {
           </div>
         </div>
       </div>
+
+      {/* Flights Hotels Visa icons */}
+
+      <TopServiceNav />
 
       {/* Features Section */}
       <div className="container my-5">
