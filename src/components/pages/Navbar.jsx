@@ -159,7 +159,7 @@ const Navbar = () => {
                 </a>
                 <ul className="dropdown-menu dropdown-menu-end">
                   <li>
-                    <Link className="dropdown-item" to="/dashboard">
+                    <Link className="dropdown-item" to="/profile">
                       Profile
                     </Link>
                   </li>

@@ -27,6 +27,8 @@ import VisaSearch from "./components/bookings/VisaSearch";
 import BusSearch from "./components/bookings/BusSearch";
 import CruiseSearch from "./components/bookings/CruiseSearch";
 import FAQs from "./components/pages/FAQs";
+import Profile from "./components/pages/Profile";
+
 
 //for  cards
 
@@ -50,6 +52,9 @@ function App() {
         <Route path="/activity-search" element={<ActivitySearch />} />
         <Route path="/flight-search" element={<FlightSearch />} />
         {/* <Route path="/FAQs" element={<FAQs />} */}
+        <Route path="/account" element={<Profile />} />
+        <Route path="/profile" element={<Profile />} />
+
         {/* Updated bookingsss */}
 
         <Route path="visa-search" element={<VisaSearch />} />
