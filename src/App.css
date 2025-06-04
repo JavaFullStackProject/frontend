@@ -38,9 +38,11 @@ body {
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -49,6 +51,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -67,6 +70,7 @@ body {
 .read-the-docs {
   color: #888;
 }
+
 .hero-overlay {
   background: rgba(0, 0, 0, 0.4);
   z-index: 1;
@@ -132,4 +136,38 @@ footer {
 
 .footer-socials a:hover {
   color: #007bff;
+}
+
+
+/* FAQS CSS */
+
+.faq-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.faq-answer {
+  padding: 10px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+  border-radius: 5px;
 }

@@ -26,6 +26,7 @@ import Footer from "./components/pages/Footer";
 import VisaSearch from "./components/bookings/VisaSearch";
 import BusSearch from "./components/bookings/BusSearch";
 import CruiseSearch from "./components/bookings/CruiseSearch";
+import FAQs from "./components/pages/FAQs";
 
 //for  cards
 
@@ -48,6 +49,7 @@ function App() {
         <Route path="/hotel-search" element={<HotelSearch />} />
         <Route path="/activity-search" element={<ActivitySearch />} />
         <Route path="/flight-search" element={<FlightSearch />} />
+        {/* <Route path="/FAQs" element={<FAQs />} */}
         {/* Updated bookingsss */}
 
         <Route path="visa-search" element={<VisaSearch />} />
@@ -90,6 +92,7 @@ function App() {
         {/* Catch-all route for undefined paths - redirects to home */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+      <FAQs />
       <Footer />
     </Router>
   );
