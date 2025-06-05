@@ -1,0 +1,170 @@
+/* Profile.css */
+
+/* General Layout */
+html {
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    /* Matches Home page */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    /* Light background like Home page */
+}
+
+/* Hero Section */
+.hero-section {
+    height: 50vh;
+    position: absolute;
+    overflow: hidden;
+    /* Ensures video doesn't overflow container */
+}
+
+.hero-section video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    object-fit: cover;
+    /* Ensures video covers entire area */
+}
+
+.hero-overlay {
+    position: relative;
+    /* Needs to be above the video */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    height: 100%;
+    /* Ensure overlay covers full height */
+}
+
+/* Text shadow classes (keep these if you want them) */
+.text-shadow-dark {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-light {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.text-shadow-dark {
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    /* Matches Home page */
+}
+
+.text-shadow-light {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    /* Matches Home page */
+}
+
+/* Cards */
+.card {
+    padding: 2rem;
+    border-radius: 8px;
+    /* Matches Home page cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Matches card-hover */
+}
+
+.card-hover:hover {
+    transform: scale(1.03);
+    /* Matches Home page card-hover */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.btn-outline-primary {
+    border: 1px solid #007bff;
+    color: #007bff;
+    border-radius: 8px;
+    /* Matches Home page buttons */
+    padding: 0.6rem 1.2rem;
+    font-weight: 500;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Badges */
+.badge-info {
+    background-color: #17a2b8;
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    /* Matches Home page */
+    padding: 1.5rem 0;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    height: 40px;
+    /* Matches Home page */
+}
+
+.footer-text {
+    flex: 1;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.footer-socials a {
+    color: #6c757d;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 40vh;
+        /* Adjust for smaller screens */
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        margin-bottom: 1rem;
+    }
+}
