@@ -28,13 +28,18 @@ import BusSearch from "./components/bookings/BusSearch";
 import CruiseSearch from "./components/bookings/CruiseSearch";
 import FAQs from "./components/pages/FAQs";
 import Profile from "./components/pages/Profile";
-
+import GoaTravelGuide from "./components/pages/GoaTravelGuide";
+import PangongTsoGuide from "./components/pages/PangongTsoGuide";
+import MunnarWayanadGuide from "./components/pages/MunnarWayanadGuide";
+import MaldivesTravelGuide from "./components/pages/MaldivesTravelGuide";
+import ScrollToTop from "./ScrollToTop";
 
 //for  cards
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       {/* Navigation bar that appears on all pages */}
       <Navbar />
 
@@ -42,6 +47,10 @@ function App() {
       <Routes>
         {/* Public Routes - accessible to all users */}
         <Route path="/" element={<Home />} />
+        <Route path="/goa-guide" element={<GoaTravelGuide />} />
+        <Route path="/PangongTso-guide" element={<PangongTsoGuide />} />
+        <Route path="/MunnarWayanad-guide" element={<MunnarWayanadGuide />} />
+        <Route path="/maldives-guide" element={<MaldivesTravelGuide />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/logout" element={<Logout />} />

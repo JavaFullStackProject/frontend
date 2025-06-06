@@ -6,7 +6,7 @@ const images = [
   "https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   "https://images.unsplash.com/photo-1738214577108-ce8760dcf9ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  
+
 ];
 
 const HeroSection = () => {
@@ -35,7 +35,7 @@ const HeroSection = () => {
       className="text-white d-flex align-items-center position-relative"
       style={{
         backgroundImage: `
-          linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+          linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)),
           url('${images[currentImage]}')
         `,
         backgroundSize: "cover",
