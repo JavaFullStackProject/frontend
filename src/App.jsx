@@ -28,17 +28,12 @@ import BusSearch from "./components/bookings/BusSearch";
 import CruiseSearch from "./components/bookings/CruiseSearch";
 import FAQs from "./components/pages/FAQs";
 import Profile from "./components/pages/Profile";
-<<<<<<< HEAD
-import Itinerary from "./components/Itinerary";
-
-
-=======
 import GoaTravelGuide from "./components/pages/GoaTravelGuide";
 import PangongTsoGuide from "./components/pages/PangongTsoGuide";
 import MunnarWayanadGuide from "./components/pages/MunnarWayanadGuide";
 import MaldivesTravelGuide from "./components/pages/MaldivesTravelGuide";
 import ScrollToTop from "./ScrollToTop";
->>>>>>> db3e44f16ee17fd70acee211f13c09439ecde66a
+import Itinerary from "./components/Itinerary";
 //for  cards
 
 function App() {

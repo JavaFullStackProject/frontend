@@ -38,9 +38,10 @@ const Itinerary = () => {
           {bookings.map((b) => (
             <div className="col-md-6" key={b.id}>
               <div className="card shadow-sm rounded-4 p-3 border-start border-4 border-primary">
-                <h5 className="card-title text-capitalize mb-2">
-                  {b.type === "hotel" ? "🏨 Hotel Booking" : "✈️ Flight Booking"}
+                <h5 className="card-title">
+                   {b.type === "bus" ? "🚌 Bus Booking" : b.type === "hotel" ? "🏨 Hotel Booking" : "✈️ Flight Booking"}
                 </h5>
+
                 <p className="mb-1">
                   <strong>Name:</strong> {b.details || "—"}
                 </p>
