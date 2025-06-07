@@ -33,7 +33,6 @@ import PangongTsoGuide from "./components/pages/PangongTsoGuide";
 import MunnarWayanadGuide from "./components/pages/MunnarWayanadGuide";
 import MaldivesTravelGuide from "./components/pages/MaldivesTravelGuide";
 import ScrollToTop from "./ScrollToTop";
-
 //for  cards
 
 function App() {
@@ -65,7 +64,6 @@ function App() {
         <Route path="/profile" element={<Profile />} />
 
         {/* Updated bookingsss */}
-
         <Route path="visa-search" element={<VisaSearch />} />
         <Route path="bus-search" element={<BusSearch />} />
         <Route path="cruise-search" element={<CruiseSearch />} />
@@ -102,7 +100,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
         {/* Catch-all route for undefined paths - redirects to home */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
