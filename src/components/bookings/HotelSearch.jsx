@@ -9,7 +9,7 @@ const HotelSearch = () => {
   const [hotels, setHotels] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const API_KEY = "5ae2e3f221c38a28845f05b677f66b92b5e7167267752179825e0462"; // Replace this with your actual API key
+  const API_KEY = "5ae2e3f221c38a28845f05b677f66b92b5e7167267752179825e0462";
 
   const handleSearch = async (e) => {
     e.preventDefault();
@@ -21,18 +21,16 @@ const HotelSearch = () => {
 
     setLoading(true);
     try {
-      // Get coordinates for the city
       const geoRes = await axios.get(
         `https://api.opentripmap.com/0.1/en/places/geoname?name=${city}&apikey=${API_KEY}`
       );
       const { lat, lon } = geoRes.data;
 
-      // Fetch hotels around the location
       const res = await axios.get(
         `https://api.opentripmap.com/0.1/en/places/radius?radius=5000&lon=${lon}&lat=${lat}&kinds=accomodations&limit=10&apikey=${API_KEY}`
       );
       setHotels(res.data.features || []);
-      console.log(hotels);
+      console.log(res.data);
     } catch (err) {
       alert("❌ Failed to fetch hotel data. Please try again.");
       console.error(err);
@@ -41,8 +39,36 @@ const HotelSearch = () => {
     }
   };
 
+  const handleBook = async (hotel) => {
+    const tripId = localStorage.getItem("selectedTripId"); // Ensure this is set somewhere before booking
+
+    if (!tripId) {
+      alert("No trip selected. Please select a trip to save this booking.");
+      return;
+    }
+
+    try {
+      const bookingData = {
+        type: "hotel",
+        reference: hotel.id,
+        provider: "OpenTripMap",
+        details: hotel.properties.name || "Unnamed Hotel",
+        startDate: checkin,
+        endDate: checkout,
+        location: city,
+      };
+
+      await Api.post(`/bookings?tripId=${tripId}`, bookingData);
+
+      alert("✅ Hotel booking saved to itinerary!");
+    } catch (err) {
+      alert("❌ Failed to book hotel.");
+      console.error(err);
+    }
+  };
+
   return (
-    <div className="container mt-5 pt-4">
+    <div className="container mt-5 pt-5">
       <div className="card p-4 shadow-sm rounded-4">
         <h4 className="mb-4">🏨 Search Hotels</h4>
         <form onSubmit={handleSearch}>
@@ -105,6 +131,12 @@ const HotelSearch = () => {
                     <p className="card-text">
                       {hotel.properties.kinds?.split(",")[0] || "Accommodation"}
                     </p>
+                    <button
+                      className="btn btn-success w-100"
+                      onClick={() => handleBook(hotel)}
+                    >
+                      ✅ Book Hotel
+                    </button>
                   </div>
                 </div>
               </div>

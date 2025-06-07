@@ -19,6 +19,7 @@ function TripList() {
         headers: { Authorization: `Bearer ${token}` },
       });
       setTrips(res.data);
+      console.log(res.data);
     } catch (err) {
       alert("Failed to load trips");
     } finally {
@@ -27,9 +28,7 @@ function TripList() {
   };
 
   const deleteTrip = async (id) => {
-    const confirmDelete = window.confirm(
-      "Are you sure you want to delete this trip?"
-    );
+    const confirmDelete = window.confirm("Are you sure you want to delete this trip?");
     if (!confirmDelete) return;
 
     try {
@@ -43,8 +42,7 @@ function TripList() {
     }
   };
 
-  if (loading)
-    return <p className="text-center mt-4 text-light">Loading trips...</p>;
+  if (loading) return <p className="text-center mt-4 text-light">Loading trips...</p>;
 
   return (
     <div className="position-relative">
@@ -64,11 +62,9 @@ function TripList() {
       </video>
 
       <div className="container mt-5 p-5">
-        <h2 className="text-lightblack mb-4 ">
-          <strong>Your Trips</strong>
-        </h2>
+        <h2 className="text-lightblack mb-4"><strong>Your Trips</strong></h2>
 
-        <div className="mb-5 " style={{ height: "400px" }}>
+        <div className="mb-5" style={{ height: "400px" }}>
           <MapView trips={trips} />
         </div>
 
@@ -88,19 +84,36 @@ function TripList() {
                 <div className="card-body bg-light bg-opacity-50">
                   <h5 className="card-title">{trip.destination}</h5>
                   <p className="card-text">
-                    <strong>Start:</strong> {trip.startDate}
-                    <br />
-                    <strong>End:</strong> {trip.endDate}
-                    <br />
+                    <strong>Start:</strong> {trip.startDate}<br />
+                    <strong>End:</strong> {trip.endDate}<br />
                     <strong>Budget:</strong> ₹{trip.budget}
                   </p>
-                  <div className="d-flex justify-content-between">
+                  <div className="d-flex justify-content-between flex-wrap gap-2">
                     <button
                       className="btn btn-sm btn-outline-primary"
-                      onClick={() => navigate(`/edit-trip/${trip.id}`)}
+                      onClick={() => {
+                        localStorage.setItem("selectedTripId", trip.id);
+                        navigate(`/edit-trip/${trip.id}`);
+                      }}
                     >
                       ✏ Edit
                     </button>
+                    <button
+                      className="btn btn-sm btn-outline-success"
+                      onClick={() => {
+                        localStorage.setItem("selectedTripId", trip.id);
+                        alert(`Trip "${trip.destination}" selected for booking.`);
+                      }}
+                    >
+                      📌 Select
+                    </button>
+                    <button
+                       className="btn btn-sm btn-outline-success"
+                       onClick={() => navigate(`/itinerary/${trip.id}`)}
+                    >
+                      📋 View Itinerary
+                    </button>
+
                     <button
                       className="btn btn-sm btn-outline-danger"
                       onClick={() => deleteTrip(trip.id)}

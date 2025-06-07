@@ -28,6 +28,7 @@ import BusSearch from "./components/bookings/BusSearch";
 import CruiseSearch from "./components/bookings/CruiseSearch";
 import FAQs from "./components/pages/FAQs";
 import Profile from "./components/pages/Profile";
+import Itinerary from "./components/Itinerary";
 
 
 //for  cards
@@ -54,6 +55,7 @@ function App() {
         {/* <Route path="/FAQs" element={<FAQs />} */}
         <Route path="/account" element={<Profile />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/itinerary/:tripId" element={<Itinerary />} />
 
         {/* Updated bookingsss */}
 
