@@ -1,0 +1,50 @@
+[
+  {
+    "destination": "United States",
+    "purpose": "Tourism",
+    "startDate": "2025-07-01",
+    "endDate": "2025-12-31"
+  },
+  {
+    "destination": "Canada",
+    "purpose": "Study",
+    "startDate": "2025-08-10",
+    "endDate": "2026-08-10"
+  },
+  {
+    "destination": "United Arab Emirates",
+    "purpose": "Business",
+    "startDate": "2025-09-01",
+    "endDate": "2026-01-01"
+  },
+  {
+    "destination": "Germany",
+    "purpose": "Job",
+    "startDate": "2025-06-01",
+    "endDate": "2026-06-01"
+  },
+  {
+    "destination": "Japan",
+    "purpose": "Tourism",
+    "startDate": "2025-07-15",
+    "endDate": "2025-10-15"
+  },
+  {
+    "destination": "Australia",
+    "purpose": "Education",
+    "startDate": "2025-08-01",
+    "endDate": "2026-08-01"
+  },
+  {
+    "destination": "Italy",
+    "purpose": "Tourism",
+    "startDate": "2025-07-20",
+    "endDate": "2025-11-20"
+  },
+  {
+    "destination": "Russia",
+    "purpose": "Business",
+    "startDate": "2025-10-01",
+    "endDate": "2026-02-01"
+  }
+]

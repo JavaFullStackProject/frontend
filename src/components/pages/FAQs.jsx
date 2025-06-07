@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
-import './FAQ.css'; // updated CSS below
+import React, { useState, useRef } from 'react';
 
 const faqs = [
     {
-        question: "What is Travel planner?",
+        question: "What is Travel Planner?",
         answer:
             "Travel Planner is a trip planner that generates personalized travel recommendations based on your preferences and budget.",
     },
     {
         question: "Is Travel Planner free to use?",
         answer:
-            "Yes, travel Planner is currently a free planning tool. The trip planner is designed to offer high-quality service without any associated costs.",
+            "Yes, Travel Planner is currently a free planning tool. The trip planner is designed to offer high-quality service without any associated costs.",
     },
     {
         question: "Does Travel Planner support international travel?",
@@ -31,37 +30,111 @@ const faqs = [
 
 const FAQ = () => {
     const [activeIndex, setActiveIndex] = useState(null);
+    const answerRefs = useRef([]);
 
     const toggle = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
     };
 
+    const cardStyle = {
+        borderRadius: '1.25rem',
+        background: 'rgba(255,255,255,0.97)',
+        boxShadow: '0 4px 24px rgba(0,0,0,0.08)',
+        padding: '2rem',
+        marginTop: '2rem'
+    };
+
+    const questionStyle = {
+        fontWeight: 600,
+        fontSize: '1.1rem',
+        color: '#18181b',
+        background: '#f3f4f6',
+        border: 'none',
+        borderRadius: '0.75rem',
+        width: '100%',
+        textAlign: 'left',
+        padding: '1rem 1.5rem',
+        marginBottom: '0.5rem',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        transition: 'background 0.2s'
+    };
+
+    const questionActiveStyle = {
+        ...questionStyle,
+        background: '#e0e7ff',
+        color: '#2563eb'
+    };
+
+    const answerStyle = {
+        background: '#f8fafc',
+        borderRadius: '0.75rem',
+        padding: '1rem 1.5rem',
+        marginBottom: '1rem',
+        marginTop: '-0.5rem',
+        color: '#374151',
+        fontSize: '1rem',
+        boxShadow: '0 2px 8px rgba(0,0,0,0.03)'
+    };
+
     return (
-        <section className="faq-section">
-            <h2>Frequently Asked Questions</h2>
-            {faqs.map((faq, index) => (
-                <div className="faq-item" key={index}>
-                    <button
-                        className={`faq-question ${activeIndex === index ? 'active' : ''}`}
-                        onClick={() => toggle(index)}
-                    >
-                        {faq.question}
-                        <span className="arrow">{activeIndex === index ? '−' : '+'}</span>
-                    </button>
-                    <div
-                        className="faq-answer"
-                        style={{
-                            maxHeight: activeIndex === index ? '200px' : '0',
-                            opacity: activeIndex === index ? 1 : 0,
-                            overflow: 'hidden',
-                            transition: 'all 0.4s ease',
-                        }}
-                    >
-                        <p>{faq.answer}</p>
+        <div
+            className="min-vh-1 d-flex flex-column"
+            style={{
+                background: 'linear-gradient(120deg, #f3f4f6 0%,rgb(255, 255, 255) 100%)'
+            }}
+        >
+            <main className="container flex-grow-1 py-5">
+                <div className="row justify-content-center">
+                    <div className="col-lg-8">
+                        <div style={cardStyle}>
+                            <h2 className="fw-bold mb-4 text-center" style={{ color: '#2563eb' }}>Frequently Asked Questions</h2>
+                            {faqs.map((faq, index) => (
+                                <div key={index}>
+                                    <button
+                                        style={activeIndex === index ? questionActiveStyle : questionStyle}
+                                        onClick={() => toggle(index)}
+                                        aria-expanded={activeIndex === index}
+                                        aria-controls={`faq-answer-${index}`}
+                                        id={`faq-question-${index}`}
+                                    >
+                                        {faq.question}
+                                        <span style={{
+                                            fontSize: '1.5rem',
+                                            marginLeft: '1rem',
+                                            color: activeIndex === index ? '#2563eb' : '#64748b',
+                                            transition: 'color 0.2s'
+                                        }}>
+                                            {activeIndex === index ? '−' : '+'}
+                                        </span>
+                                    </button>
+                                    <div
+                                        id={`faq-answer-${index}`}
+                                        role="region"
+                                        aria-labelledby={`faq-question-${index}`}
+                                        ref={el => answerRefs.current[index] = el}
+                                        style={{
+                                            maxHeight: activeIndex === index
+                                                ? answerRefs.current[index]?.scrollHeight + "px"
+                                                : "0",
+                                            opacity: activeIndex === index ? 1 : 0,
+                                            overflow: 'hidden',
+                                            transition: 'all 0.4s cubic-bezier(.4,0,.2,1)',
+                                            marginBottom: activeIndex === index ? '1rem' : '0'
+                                        }}
+                                    >
+                                        <div style={answerStyle}>
+                                            {faq.answer}
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
-            ))}
-        </section>
+            </main>
+        </div>
     );
 };
 

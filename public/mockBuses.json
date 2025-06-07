@@ -1,0 +1,226 @@
+[
+  {
+    "from": "Delhi",
+    "to": "Agra",
+    "destination": "Agra",
+    "image": "https://tse3.mm.bing.net/th?id=OIP.-CDDfLZYME9QXzMyV1f8wQHaE8&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Mumbai",
+    "to": "Pune",
+    "destination": "Pune",
+    "image": "https://tse1.mm.bing.net/th?id=OIP.dtNuq3zISby7QtZ-xcrSqwHaDt&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Bengaluru",
+    "to": "Mysore",
+    "destination": "Mysore",
+    "image": "https://tse4.mm.bing.net/th?id=OIP.zw65qV5IOVwy9iH4LS3OGQHaDm&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Chennai",
+    "to": "Coimbatore",
+    "destination": "Coimbatore",
+    "image": "https://assets-news.housing.com/news/wp-content/uploads/2022/07/21234906/Coimbatore1.jpg"
+  },
+  {
+    "from": "Hyderabad",
+    "to": "Warangal",
+    "destination": "Warangal",
+    "image": "https://www.goindigo.in/content/dam/s6web/in/en/assets/Destinations/destinations/hyderabad/073616_T_Prince_charminar-1.jpg"
+  },
+  {
+    "from": "Kolkata",
+    "to": "Digha",
+    "destination": "Digha",
+    "image": "https://tse1.mm.bing.net/th?id=OIP.Igfzap1Gc9ito1N52yxiSAHaEK&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Ahmedabad",
+    "to": "Surat",
+    "destination": "Surat",
+    "image": "https://i.ytimg.com/vi/vcXQ43k-JBg/maxresdefault.jpg"
+  },
+  {
+    "from": "Jaipur",
+    "to": "Jodhpur",
+    "destination": "Jodhpur",
+    "image": "https://tse2.mm.bing.net/th?id=OIP.KQ0tpdd2dkXxXo_-VqQORQHaEc&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Lucknow",
+    "to": "Varanasi",
+    "destination": "Varanasi",
+    "image": "https://tse4.mm.bing.net/th?id=OIP.sUzHv_FwRQTYSF53bD78EQHaEK&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Patna",
+    "to": "Gaya",
+    "destination": "Gaya",
+    "image": "https://tse2.mm.bing.net/th?id=OIP.IGVjBVoi7HJ3dil3htcZXwHaEK&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Bhopal",
+    "to": "Indore",
+    "destination": "Indore",
+    "image": "https://tse2.mm.bing.net/th?id=OIP.6uy1p5FnnXi_pKP4S3JA9wHaEK&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Chandigarh",
+    "to": "Amritsar",
+    "destination": "Amritsar",
+    "image": "https://smartcity.eletsonline.com/wp-content/uploads/2017/07/Chandigarh.jpg"
+  },
+  {
+    "from": "Dehradun",
+    "to": "Mussoorie",
+    "destination": "Mussoorie",
+    "image": "https://tse2.mm.bing.net/th?id=OIP.fwTyQ4vGWO7H_SW7sd1PyAHaDm&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Shimla",
+    "to": "Manali",
+    "destination": "Manali",
+    "image": "https://tse2.mm.bing.net/th?id=OIP.rs4fdP_QgsrUdWkRon0DNAHaEA&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Goa",
+    "to": "Panaji",
+    "destination": "Panaji",
+    "image": "https://1.bp.blogspot.com/-nxIHsF8lbzc/Xt9G8iZraWI/AAAAAAAABSQ/pMGiMhNSWY0ARD-d14Zkw6q73k120MNMACNcBGAsYHQ/s1600/goa.jpg"
+  },
+  {
+    "from": "Guwahati",
+    "to": "Shillong",
+    "destination": "Shillong",
+    "image": "https://tse1.mm.bing.net/th?id=OIP.If7v1ROBz2MX3zTeg0XYMwHaEc&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Ranchi",
+    "to": "Jamshedpur",
+    "destination": "Jamshedpur",
+    "image": "https://tse4.mm.bing.net/th?id=OIP.eow9JwqTfpY4PD-vv0UM_gHaEK&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Bhubaneswar",
+    "to": "Puri",
+    "destination": "Puri",
+    "image": "https://tse1.mm.bing.net/th?id=OIP.NeuxVNIXCBKI8aHQqNxszQHaFj&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Visakhapatnam",
+    "to": "Araku",
+    "destination": "Araku",
+    "image": "https://tse4.mm.bing.net/th?id=OIP.gwW-hWGDqeE_VDxlXzTizwHaFj&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Madurai",
+    "to": "Rameswaram",
+    "destination": "Rameswaram",
+    "image": "https://preview.redd.it/52b873s6ygx61.jpg?auto=webp&s=4f2d071587fc79e258d489c1d10c3bb5c4020606"
+  },
+  {
+    "from": "Nagpur",
+    "to": "Wardha",
+    "destination": "Wardha",
+    "image": "https://i.ytimg.com/vi/HmpzfetoCD8/maxresdefault.jpg"
+  },
+  {
+    "from": "Jodhpur",
+    "to": "Udaipur",
+    "destination": "Udaipur",
+    "image": "https://tse2.mm.bing.net/th?id=OIP.jNXTHjDkgB2WE0B2oujC-gHaE8&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Varanasi",
+    "to": "Allahabad",
+    "destination": "Allahabad",
+    "image": "https://static.toiimg.com/photo/67361345/allahabad.jpg?width=748&resize=4"
+  },
+  {
+    "from": "Agra",
+    "to": "Mathura",
+    "destination": "Mathura",
+    "image": "https://tse4.mm.bing.net/th?id=OIP.MdBQHeeDa3Nu-eEGpabAcAHaE8&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Kanpur",
+    "to": "Lucknow",
+    "destination": "Lucknow",
+    "image": "https://tse2.mm.bing.net/th?id=OIP.cxwc4ocsLyxDeze14dVH9gHaEK&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Ludhiana",
+    "to": "Chandigarh",
+    "destination": "Chandigarh",
+    "image": "https://tse4.mm.bing.net/th?id=OIP.60JmQBMqK8SO-Ni9EAjVcAHaEK&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Jammu",
+    "to": "Srinagar",
+    "destination": "Srinagar",
+    "image": "https://tse3.mm.bing.net/th?id=OIP.4lFDiS1WLm7evD3ea8GV1QHaEK&pid=Api&P=0&h=180"
+  },
+
+  {
+    "from": "Meerut",
+    "to": "Haridwar",
+    "destination": "Haridwar",
+    "image": "https://tse2.mm.bing.net/th?id=OIP.05BSAPMyB5JsjqOzsp-iqAHaEc&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Gurgaon",
+    "to": "Noida",
+    "destination": "Noida",
+    "image": "https://tse1.mm.bing.net/th?id=OIP.hwH035BbbaaYNQczUE8MwAHaEK&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Faridabad",
+    "to": "Delhi",
+    "destination": "Delhi",
+    "image": "https://tse4.mm.bing.net/th?id=OIP.LNd7f7FQTM5nKhngh_2FewHaE7&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Thrissur",
+    "to": "Kochi",
+    "destination": "Kochi",
+    "image": "https://tse2.mm.bing.net/th?id=OIP.H5aZjxoarCXZayQ_soWYhwHaEK&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Mangalore",
+    "to": "Udupi",
+    "destination": "Udupi",
+    "image": "https://tse2.mm.bing.net/th?id=OIP.oCOp6S_rVx70dSbD3MRW5AHaEK&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Nashik",
+    "to": "Shirdi",
+    "destination": "Shirdi",
+    "image": "https://tse3.mm.bing.net/th?id=OIP.af7EA9ABtAdze5G4ckw04gHaEZ&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Rajkot",
+    "to": "Bhuj",
+    "destination": "Bhuj",
+    "image": "https://tse3.mm.bing.net/th?id=OIP.xW1B9xEbvLtHrqGkD6wKDwHaE8&pid=Api&P=0&h=180"
+  },
+
+  {
+    "from": "Tirupati",
+    "to": "Tirumala",
+    "destination": "Tirumala",
+    "image": "https://tse2.mm.bing.net/th?id=OIP.ZhZE5EWrnFN8ZmGMGiITRQHaFc&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Guntur",
+    "to": "Vijayawada",
+    "destination": "Vijayawada",
+    "image": "https://tse3.mm.bing.net/th?id=OIP.H_gRuWtB1Gyrg5qBOd1EWQHaFl&pid=Api&P=0&h=180"
+  },
+  {
+    "from": "Warangal",
+    "to": "Karimnagar",
+    "destination": "Karimnagar",
+    "image": "https://tse3.mm.bing.net/th?id=OIP.P8QWs-T12I8jav7n-z1OdQHaE6&pid=Api&P=0&h=180"
+  }
+]
