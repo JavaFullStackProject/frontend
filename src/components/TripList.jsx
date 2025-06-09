@@ -2,14 +2,37 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Api from "../Api";
 import MapView from "./MapView";
+import BudgetTracker from "./BudgetTracker";
+import RecommendationEngine from "./RecommendationEngine";
 
 function TripList() {
   const [trips, setTrips] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [selectedTripId, setSelectedTripId] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
     fetchTrips();
+  }, []);
+
+  useEffect(() => {
+    const modal = document.getElementById("budgetModal");
+
+    const handleShow = () => setIsModalOpen(true);
+    const handleHide = () => setIsModalOpen(false);
+
+    if (modal) {
+      modal.addEventListener("shown.bs.modal", handleShow);
+      modal.addEventListener("hidden.bs.modal", handleHide);
+    }
+
+    return () => {
+      if (modal) {
+        modal.removeEventListener("shown.bs.modal", handleShow);
+        modal.removeEventListener("hidden.bs.modal", handleHide);
+      }
+    };
   }, []);
 
   const fetchTrips = async () => {
@@ -19,7 +42,6 @@ function TripList() {
         headers: { Authorization: `Bearer ${token}` },
       });
       setTrips(res.data);
-      console.log(res.data);
     } catch (err) {
       alert("Failed to load trips");
     } finally {
@@ -61,8 +83,17 @@ function TripList() {
         />
       </video>
 
-      <div className="container mt-5 p-5">
-        <h2 className="text-lightblack mb-4"><strong>Your Trips</strong></h2>
+      {/* Blur wrapper */}
+      <div className={`container mt-5 p-5 ${isModalOpen ? "blurred" : ""}`} id="main-content">
+        <div className="d-flex justify-content-between align-items-center mb-4">
+          <h2 className="text-lightblack m-0"><strong>Your Trips</strong></h2>
+          <button
+            className="btn btn-primary"
+            onClick={() => navigate("/plan-trip")}
+          >
+            ➕ Plan New Trip
+          </button>
+        </div>
 
         <div className="mb-5" style={{ height: "400px" }}>
           <MapView trips={trips} />
@@ -108,12 +139,19 @@ function TripList() {
                       📌 Select
                     </button>
                     <button
-                       className="btn btn-sm btn-outline-success"
-                       onClick={() => navigate(`/itinerary/${trip.id}`)}
+                      className="btn btn-sm btn-outline-success"
+                      onClick={() => navigate(`/itinerary/${trip.id}`)}
                     >
                       📋 View Itinerary
                     </button>
-
+                    <button
+                      className="btn btn-sm btn-outline-warning"
+                      data-bs-toggle="modal"
+                      data-bs-target="#budgetModal"
+                      onClick={() => setSelectedTripId(trip.id)}
+                    >
+                      💰 Budget
+                    </button>
                     <button
                       className="btn btn-sm btn-outline-danger"
                       onClick={() => deleteTrip(trip.id)}
@@ -121,6 +159,11 @@ function TripList() {
                       🗑 Delete
                     </button>
                   </div>
+                  <RecommendationEngine
+                    destination={trip.destination}
+                    lat={trip.lat}
+                    lng={trip.lng}
+                  />
                 </div>
               </div>
             </div>
@@ -128,13 +171,45 @@ function TripList() {
         </div>
       </div>
 
-      {/* Bootstrap hover effect */}
+      {/* Bootstrap Modal for Budget Tracker */}
+      <div
+        className="modal fade"
+        id="budgetModal"
+        tabIndex="-1"
+        aria-labelledby="budgetModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-lg modal-dialog-scrollable">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="budgetModalLabel">💰 Budget Tracker</h5>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="modal-body">
+              {selectedTripId && <BudgetTracker tripId={selectedTripId} />}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Custom styles */}
       <style>
         {`
           .card:hover {
             transform: scale(1.05);
             box-shadow: 0 0 20px rgba(0,0,0,0.3);
             transition: transform 0.3s, box-shadow 0.3s;
+          }
+          .blurred {
+            filter: blur(5px);
+            pointer-events: none;
+            user-select: none;
+            transition: filter 0.3s ease-in-out;
           }
         `}
       </style>

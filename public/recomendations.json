@@ -1,0 +1,374 @@
+{
+  "Agra": [
+    {
+      "name": "Taj Mahal",
+      "description": "Iconic white marble mausoleum, one of the 7 wonders.",
+      "image": "https://www.holidify.com/images/cmsuploads/compressed/attr_343.jpg"
+    },
+    {
+      "name": "Agra Fort",
+      "description": "Historic fort and UNESCO World Heritage site.",
+      "image": "https://www.holidify.com/images/cmsuploads/compressed/AgraFort1_20200317164401.jpg"
+    }
+  ],
+  "Mysore": [
+    {
+      "name": "Mysore Palace",
+      "description": "Historical royal palace with rich architecture.",
+      "image": "https://www.holidify.com/images/cmsuploads/compressed/MysorePalace_20200317170216.jpg"
+    },
+    {
+      "name": "Chamundi Hill",
+      "description": "Hill with a temple offering panoramic views.",
+      "image": "https://www.holidify.com/images/cmsuploads/compressed/ChamundiHill_20200317170417.jpg"
+    }
+  ],
+  "Jaipur": [
+    {
+      "name": "Hawa Mahal",
+      "description": "Palace of Winds with unique architecture.",
+      "image": "https://www.holidify.com/images/cmsuploads/compressed/HawaMahal_20200317173639.jpg"
+    },
+    {
+      "name": "Amber Fort",
+      "description": "Large hilltop fort with stunning views and history.",
+      "image": "https://www.holidify.com/images/cmsuploads/compressed/AmberFort_20200317173934.jpg"
+    }
+  ],
+  "Delhi": [
+    {
+      "name": "Connaught Place",
+      "description": "Popular commercial hub with colonial architecture.",
+      "image": "https://example.com/images/delhi1.jpg"
+    },
+    {
+      "name": "Chandni Chowk",
+      "description": "Bustling market area with historic charm.",
+      "image": "https://example.com/images/delhi2.jpg"
+    }
+  ],
+  "Mumbai": [
+    {
+      "name": "Marine Drive",
+      "description": "Picturesque coastal boulevard in Mumbai.",
+      "image": "https://example.com/images/mumbai1.jpg"
+    },
+    {
+      "name": "Gateway of India",
+      "description": "Historic monument overlooking the Arabian Sea.",
+      "image": "https://example.com/images/mumbai2.jpg"
+    }
+  ],
+  "Kolkata": [
+    {
+      "name": "Victoria Memorial",
+      "description": "Iconic marble structure dedicated to Queen Victoria.",
+      "image": "https://example.com/images/kolkata1.jpg"
+    },
+    {
+      "name": "Howrah Bridge",
+      "description": "Famous cantilever bridge over the Hooghly River.",
+      "image": "https://example.com/images/kolkata2.jpg"
+    }
+  ],
+  "Chennai": [
+    {
+      "name": "Marina Beach",
+      "description": "Longest urban beach in India.",
+      "image": "https://example.com/images/chennai1.jpg"
+    },
+    {
+      "name": "Kapaleeshwarar Temple",
+      "description": "Ancient Dravidian-style temple dedicated to Lord Shiva.",
+      "image": "https://example.com/images/chennai2.jpg"
+    }
+  ],
+  "Hyderabad": [
+    {
+      "name": "Charminar",
+      "description": "Iconic four-minaret mosque and landmark.",
+      "image": "https://example.com/images/hyderabad1.jpg"
+    },
+    {
+      "name": "Golconda Fort",
+      "description": "Historic fort known for acoustics and architecture.",
+      "image": "https://example.com/images/hyderabad2.jpg"
+    }
+  ],
+  "Bangalore": [
+    {
+      "name": "Lalbagh Botanical Garden",
+      "description": "Historic garden with diverse flora.",
+      "image": "https://example.com/images/bangalore1.jpg"
+    },
+    {
+      "name": "Cubbon Park",
+      "description": "Lush green park ideal for relaxation.",
+      "image": "https://example.com/images/bangalore2.jpg"
+    }
+  ],
+  "Pune": [
+    {
+      "name": "Shaniwar Wada",
+      "description": "Historical fortress of the Peshwas.",
+      "image": "https://example.com/images/pune1.jpg"
+    },
+    {
+      "name": "Sinhagad Fort",
+      "description": "Mountain fort with a rich history.",
+      "image": "https://example.com/images/pune2.jpg"
+    }
+  ],
+  "Ahmedabad": [
+    {
+      "name": "Sabarmati Ashram",
+      "description": "Gandhi's residence and museum.",
+      "image": "https://example.com/images/ahmedabad1.jpg"
+    },
+    {
+      "name": "Kankaria Lake",
+      "description": "Popular recreational lake in Ahmedabad.",
+      "image": "https://example.com/images/ahmedabad2.jpg"
+    }
+  ],
+  "Varanasi": [
+    {
+      "name": "Dashashwamedh Ghat",
+      "description": "Famous riverfront ghat in Varanasi.",
+      "image": "https://example.com/images/varanasi1.jpg"
+    },
+    {
+      "name": "Kashi Vishwanath Temple",
+      "description": "Sacred Hindu temple dedicated to Lord Shiva.",
+      "image": "https://example.com/images/varanasi2.jpg"
+    }
+  ],
+  "Lucknow": [
+    {
+      "name": "Bara Imambara",
+      "description": "Historical monument known for its architecture.",
+      "image": "https://example.com/images/lucknow1.jpg"
+    },
+    {
+      "name": "Rumi Darwaza",
+      "description": "Majestic gateway reflecting Awadhi style.",
+      "image": "https://example.com/images/lucknow2.jpg"
+    }
+  ],
+  "Amritsar": [
+    {
+      "name": "Golden Temple",
+      "description": "Sacred Sikh shrine with stunning architecture.",
+      "image": "https://example.com/images/amritsar1.jpg"
+    },
+    {
+      "name": "Wagah Border",
+      "description": "India-Pakistan border famous for its ceremony.",
+      "image": "https://example.com/images/amritsar2.jpg"
+    }
+  ],
+  "Shimla": [
+    {
+      "name": "Mall Road",
+      "description": "Popular shopping and leisure street.",
+      "image": "https://example.com/images/shimla1.jpg"
+    },
+    {
+      "name": "Jakhoo Temple",
+      "description": "Hilltop temple dedicated to Lord Hanuman.",
+      "image": "https://example.com/images/shimla2.jpg"
+    }
+  ],
+  "Manali": [
+    {
+      "name": "Solang Valley",
+      "description": "Adventure spot known for skiing and paragliding.",
+      "image": "https://example.com/images/manali1.jpg"
+    },
+    {
+      "name": "Rohtang Pass",
+      "description": "Scenic mountain pass with breathtaking views.",
+      "image": "https://example.com/images/manali2.jpg"
+    }
+  ],
+  "Goa": [
+    {
+      "name": "Baga Beach",
+      "description": "Popular beach known for nightlife and water sports.",
+      "image": "https://example.com/images/goa1.jpg"
+    },
+    {
+      "name": "Fort Aguada",
+      "description": "Historic Portuguese fort with scenic views.",
+      "image": "https://example.com/images/goa2.jpg"
+    }
+  ],
+  "Bhopal": [
+    {
+      "name": "Upper Lake",
+      "description": "Beautiful lake offering boat rides and sunset views.",
+      "image": "https://example.com/images/bhopal1.jpg"
+    },
+    {
+      "name": "Bhimbetka Caves",
+      "description": "Ancient rock shelters with prehistoric paintings.",
+      "image": "https://example.com/images/bhopal2.jpg"
+    }
+  ],
+  "Indore": [
+    {
+      "name": "Rajwada Palace",
+      "description": "Historic palace reflecting Maratha architectural style.",
+      "image": "https://example.com/images/indore1.jpg"
+    },
+    {
+      "name": "Sarafa Bazaar",
+      "description": "Famous food street known for night-time delicacies.",
+      "image": "https://example.com/images/indore2.jpg"
+    }
+  ],
+  "Nagpur": [
+    {
+      "name": "Deekshabhoomi",
+      "description": "Sacred Buddhist monument and pilgrimage site.",
+      "image": "https://example.com/images/nagpur1.jpg"
+    },
+    {
+      "name": "Ambazari Lake",
+      "description": "Serene lake surrounded by lush greenery.",
+      "image": "https://example.com/images/nagpur2.jpg"
+    }
+  ],
+  "Jodhpur": [
+    {
+      "name": "Mehrangarh Fort",
+      "description": "Majestic fort offering breathtaking views of Jodhpur.",
+      "image": "https://example.com/images/jodhpur1.jpg"
+    },
+    {
+      "name": "Umaid Bhawan Palace",
+      "description": "Royal palace blending history and luxury.",
+      "image": "https://example.com/images/jodhpur2.jpg"
+    }
+  ],
+  "Udaipur": [
+    {
+      "name": "City Palace",
+      "description": "Magnificent palace complex with beautiful architecture.",
+      "image": "https://example.com/images/udaipur1.jpg"
+    },
+    {
+      "name": "Lake Pichola",
+      "description": "Scenic artificial lake offering boat rides.",
+      "image": "https://example.com/images/udaipur2.jpg"
+    }
+  ],
+  "Rishikesh": [
+    {
+      "name": "Lakshman Jhula",
+      "description": "Suspension bridge with spiritual and scenic significance.",
+      "image": "https://example.com/images/rishikesh1.jpg"
+    },
+    {
+      "name": "Triveni Ghat",
+      "description": "Sacred riverside spot for evening aarti.",
+      "image": "https://example.com/images/rishikesh2.jpg"
+    }
+  ],
+  "Haridwar": [
+    {
+      "name": "Har Ki Pauri",
+      "description": "Holy ghat on the Ganges river famous for aarti.",
+      "image": "https://example.com/images/haridwar1.jpg"
+    },
+    {
+      "name": "Chandi Devi Temple",
+      "description": "Hilltop temple offering panoramic views.",
+      "image": "https://example.com/images/haridwar2.jpg"
+    }
+  ],
+  "Nainital": [
+    {
+      "name": "Naini Lake",
+      "description": "Scenic lake ideal for boating and relaxation.",
+      "image": "https://example.com/images/nainital1.jpg"
+    },
+    {
+      "name": "Tiffin Top",
+      "description": "Hilltop viewpoint offering stunning vistas.",
+      "image": "https://example.com/images/nainital2.jpg"
+    }
+  ],
+  "Darjeeling": [
+    {
+      "name": "Tiger Hill",
+      "description": "Famous sunrise viewpoint with Himalayan vistas.",
+      "image": "https://example.com/images/darjeeling1.jpg"
+    },
+    {
+      "name": "Batasia Loop",
+      "description": "Scenic railway loop with war memorial.",
+      "image": "https://example.com/images/darjeeling2.jpg"
+    }
+  ],
+  "Gangtok": [
+    {
+      "name": "Tsomgo Lake",
+      "description": "Scenic glacial lake surrounded by mountains.",
+      "image": "https://example.com/images/gangtok1.jpg"
+    },
+    {
+      "name": "Rumtek Monastery",
+      "description": "Prominent Buddhist monastery with stunning architecture.",
+      "image": "https://example.com/images/gangtok2.jpg"
+    }
+  ],
+  "Kochi": [
+    {
+      "name": "Fort Kochi",
+      "description": "Historic colonial-era area with cultural landmarks.",
+      "image": "https://example.com/images/kochi1.jpg"
+    },
+    {
+      "name": "Marine Drive",
+      "description": "Scenic waterfront promenade in Kochi.",
+      "image": "https://example.com/images/kochi2.jpg"
+    }
+  ],
+  "Thiruvananthapuram": [
+    {
+      "name": "Padmanabhaswamy Temple",
+      "description": "Ancient Hindu temple famous for its gold treasure.",
+      "image": "https://example.com/images/thiruvananthapuram1.jpg"
+    },
+    {
+      "name": "Kovalam Beach",
+      "description": "Popular beach destination near the city.",
+      "image": "https://example.com/images/thiruvananthapuram2.jpg"
+    }
+  ],
+  "Munnar": [
+    {
+      "name": "Tea Gardens",
+      "description": "Lush tea plantations offering scenic views.",
+      "image": "https://example.com/images/munnar1.jpg"
+    },
+    {
+      "name": "Eravikulam National Park",
+      "description": "Wildlife sanctuary known for Nilgiri Tahr.",
+      "image": "https://example.com/images/munnar2.jpg"
+    }
+  ],
+  "Alleppey": [
+    {
+      "name": "Backwaters",
+      "description": "Famous houseboat cruises through serene waterways.",
+      "image": "https://pixahive.com/photo/alleppey-backwaters-in-kerala/"
+    },
+    {
+      "name": "Alleppey Beach",
+      "description": "Pristine beach offering sunset views.",
+      "image": "https://www.shutterstock.com/search/alleppey-beach"
+    }
+  ]
+}

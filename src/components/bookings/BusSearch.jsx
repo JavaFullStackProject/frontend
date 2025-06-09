@@ -61,6 +61,8 @@ const BusSearch = () => {
         details: `Bus from ${bus.from} to ${bus.to}`,
         startDate: bus.startDate,
         endDate: bus.startDate,
+        estimatedDate : bus.estimatedDate,
+        actualDate : bus.actualDate
       };
 
       await Api.post(`/bookings?tripId=${tripId}`, bookingData);
