@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "from": "Hyderabad",
+    "to": "United States",
+    "date": "2025-07-01",
+    "airline": "Delta Airlines",
+    "duration": "20h 15m",
+    "price": "₹ 92,000",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2VoieWVzaBi43PfqgJIA8m_iBp6tjCWJNMQ&s"
+  },
+  {
+    "id": 2,
+    "from": "Hyderabad",
+    "to": "Canada",
+    "date": "2025-08-10",
+    "airline": "Air Canada",
+    "duration": "19h 40m",
+    "price": "₹ 87,500",
+    "photo": "https://guidemeimmigration.com/wp-content/uploads/2023/09/140630124917-12-canada-most-beautiful-places.jpg"
+  },
+  {
+    "id": 3,
+    "from": "Hyderabad",
+    "to": "United Arab Emirates",
+    "date": "2025-09-01",
+    "airline": "Emirates",
+    "duration": "4h 10m",
+    "price": "₹ 24,800",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzYWXI082ksX7hIlN3eMEoTuMIQsu52ed5Fg&s"
+  },
+  {
+    "id": 4,
+    "from": "Hyderabad",
+    "to": "Germany",
+    "date": "2025-06-01",
+    "airline": "Lufthansa",
+    "duration": "10h 30m",
+    "price": "₹ 69,000",
+    "photo": "https://static.toiimg.com/thumb/msid-111576967,width-748,height-499,resizemode=4,imgsize-124472/8-German-cities-to-add-to-your-travel-wishlist.jpg"
+  },
+  {
+    "id": 5,
+    "from": "Hyderabad",
+    "to": "France",
+    "date": "2025-07-15",
+    "airline": "Air France",
+    "duration": "11h 20m",
+    "price": "₹ 72,000",
+    "photo": "https://captureatrip-cms-storage.s3.ap-south-1.amazonaws.com/Places_To_Visit_In_France_177c888f3f.webp"
+  },
+  {
+    "id": 6,
+    "from": "Hyderabad",
+    "to": "Australia",
+    "date": "2025-11-01",
+    "airline": "Qantas",
+    "duration": "15h 45m",
+    "price": "₹ 1,05,000",
+    "photo": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/10A3C/production/_129365186_gettyimages-103455489.jpg"
+  },
+  {
+    "id": 7,
+    "from": "Hyderabad",
+    "to": "United Kingdom",
+    "date": "2025-10-10",
+    "airline": "British Airways",
+    "duration": "10h 55m",
+    "price": "₹ 81,000",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Q0fMhFol5sAfhnw80C-CGBRaxF1FtB7tAQ&s"
+  },
+  {
+    "id": 8,
+    "from": "Hyderabad",
+    "to": "Italy",
+    "date": "2025-07-05",
+    "airline": "ITA Airways",
+    "duration": "11h 40m",
+    "price": "₹ 77,500",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDP1AF6UAgLNX2SgFynqvELm-nitxHzOXiYg&s"
+  },
+  {
+    "id": 9,
+    "from": "Hyderabad",
+    "to": "Singapore",
+    "date": "2025-08-01",
+    "airline": "Singapore Airlines",
+    "duration": "4h 45m",
+    "price": "₹ 29,900",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR44P2R18SEp2HeB3lWtuAF28_PGMrvjvSR9g&s"
+  },
+  {
+    "id": 10,
+    "from": "Hyderabad",
+    "to": "Japan",
+    "date": "2025-10-01",
+    "airline": "ANA",
+    "duration": "9h 15m",
+    "price": "₹ 66,000",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4FichgawfwrnY9Iqrg8W7piwIlxkc-DSthg&s"
+  }
+]

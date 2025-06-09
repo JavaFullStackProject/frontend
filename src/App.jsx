@@ -34,6 +34,7 @@ import MunnarWayanadGuide from "./components/pages/MunnarWayanadGuide";
 import MaldivesTravelGuide from "./components/pages/MaldivesTravelGuide";
 import ScrollToTop from "./ScrollToTop";
 import Itinerary from "./components/Itinerary";
+
 //for  cards
 
 function App() {
@@ -69,6 +70,7 @@ function App() {
         <Route path="visa-search" element={<VisaSearch />} />
         <Route path="bus-search" element={<BusSearch />} />
         <Route path="cruise-search" element={<CruiseSearch />} />
+
         {/* Protected Routes - only accessible to authenticated users */}
         <Route
           path="/dashboard"
