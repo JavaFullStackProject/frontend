@@ -34,11 +34,14 @@ import MunnarWayanadGuide from "./components/pages/MunnarWayanadGuide";
 import MaldivesTravelGuide from "./components/pages/MaldivesTravelGuide";
 import ScrollToTop from "./ScrollToTop";
 import Itinerary from "./components/Itinerary";
+import NotificationComponent from "./components/NotificationComponent";
 
 //for  cards
 
 function App() {
   return (
+    <>
+    <NotificationComponent />
     <Router>
       <ScrollToTop />
       {/* Navigation bar that appears on all pages */}
@@ -110,6 +113,7 @@ function App() {
       <FAQs />
       <Footer />
     </Router>
+    </>
   );
 }
 
