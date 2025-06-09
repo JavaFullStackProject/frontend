@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Api from "../../Api";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const BusSearch = () => {
   const [city, setCity] = useState("");
@@ -8,6 +10,7 @@ const BusSearch = () => {
   const [buses, setBuses] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const handleSearch = async (e) => {
     e.preventDefault();
@@ -45,33 +48,49 @@ const BusSearch = () => {
   };
 
   const handleBook = async (bus) => {
-    const tripId = localStorage.getItem("selectedTripId");
-    if (!tripId) {
-      alert("No trip selected. Please select a trip to save this booking.");
-      return;
-    }
+  const tripId = localStorage.getItem("selectedTripId");
+  if (!tripId) {
+    toast.warn("⚠️ No trip selected. Please select a trip to save this booking.", {
+      position: "top-right",
+      autoClose: 4000,
+      pauseOnHover: true,
+      draggable: true,
+    });
+    return;
+  }
 
-    try {
-      const bookingData = {
-        type: "bus",
-        reference: bus.from + "-" + bus.to,
-        provider: "StaticBusProvider",
-        name: "Bus from " + bus.from + " to " + bus.to,
-        location: bus.from,
-        details: `Bus from ${bus.from} to ${bus.to}`,
-        startDate: bus.startDate,
-        endDate: bus.startDate,
-        estimatedDate : bus.estimatedDate,
-        actualDate : bus.actualDate
-      };
+  try {
+    const bookingData = {
+      type: "bus",
+      reference: bus.from + "-" + bus.to,
+      provider: "StaticBusProvider",
+      name: "Bus from " + bus.from + " to " + bus.to,
+      location: bus.from,
+      details: `Bus from ${bus.from} to ${bus.to}`,
+      startDate: bus.startDate,
+      endDate: bus.startDate,
+      estimatedDate: bus.estimatedDate,
+      actualDate: bus.actualDate,
+    };
 
-      await Api.post(`/bookings?tripId=${tripId}`, bookingData);
-      alert("✅ Bus booking saved to itinerary!");
-    } catch (err) {
-      console.error(err);
-      alert("❌ Failed to save bus booking.");
-    }
-  };
+    await Api.post(`/bookings?tripId=${tripId}`, bookingData);
+    toast.success("✅ Bus booking saved to itinerary!", {
+      position: "top-right",
+      autoClose: 3000,
+      pauseOnHover: true,
+      draggable: true,
+    });
+    navigate("/dashboard");
+  } catch (err) {
+    console.error(err);
+    toast.error("❌ Failed to save bus booking.", {
+      position: "top-right",
+      autoClose: 4000,
+      pauseOnHover: true,
+      draggable: true,
+    });
+  }
+};
 
   return (
     <div className="container mt-5 pt-4">

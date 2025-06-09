@@ -82,7 +82,7 @@
   {
     "id": 9,
     "from": "Hyderabad",
-    "to": "Singapore",
+    "to": "manali",
     "date": "2025-08-01",
     "airline": "Singapore Airlines",
     "duration": "4h 45m",
@@ -97,6 +97,16 @@
     "airline": "ANA",
     "duration": "9h 15m",
     "price": "₹ 66,000",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4FichgawfwrnY9Iqrg8W7piwIlxkc-DSthg&s"
+  },
+  {
+    "id": 11,
+    "from": "chennai",
+    "to": "Japan",
+    "date": "2025-10-01",
+    "airline": "ANA",
+    "duration": "9h 15m",
+    "price": "₹ 76,000",
     "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4FichgawfwrnY9Iqrg8W7piwIlxkc-DSthg&s"
   }
 ]

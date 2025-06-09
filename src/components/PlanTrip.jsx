@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Api from "../Api";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const PlanTrip = () => {
   const [destination, setDestination] = useState("");
@@ -18,10 +20,22 @@ const PlanTrip = () => {
       await Api.post("/trips", trip, {
         headers: { Authorization: `Bearer ${token}` },
       });
-      alert("🎉 Trip planned successfully!");
+
+      toast.success("🎉 Trip planned successfully!", {
+        position: "top-right",
+        autoClose: 3000,
+        pauseOnHover: true,
+        draggable: true,
+      });
+
       navigate("/dashboard");
     } catch (err) {
-      alert("❌ Error: " + (err.response?.data || err.message));
+      toast.error("❌ Error: " + (err.response?.data || err.message), {
+        position: "top-right",
+        autoClose: 4000,
+        pauseOnHover: true,
+        draggable: true,
+      });
     }
   };
 

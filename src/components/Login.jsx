@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Api from "../Api";
 import { Eye, EyeSlash, ArrowRight } from "react-bootstrap-icons";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Login() {
@@ -11,22 +13,36 @@ function Login() {
   const navigate = useNavigate();
 
   useEffect(() => {
-        const token = localStorage.getItem("token");
-          if (token) {
-             navigate("/dashboard", { replace: true }); // Auto redirect if already logged in
-          }
-    }, []);
+    const token = localStorage.getItem("token");
+    if (token) {
+      navigate("/dashboard", { replace: true });
+    }
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const loginData = { email, password };
+
     try {
       const res = await Api.post("/auth/login", loginData);
       localStorage.setItem("token", res.data);
-      alert("Login successful!");
+      toast.success("Login successful!", {
+        position: "top-right",
+        autoClose: 3000,
+        pauseOnHover: true,
+        draggable: true,
+      });
       navigate("/dashboard");
     } catch (err) {
-      alert("Login failed: " + (err.response?.data || err.message));
+      toast.error(
+        "Login failed: " + (err.response?.data || err.message),
+        {
+          position: "top-right",
+          autoClose: 4000,
+          pauseOnHover: true,
+          draggable: true,
+        }
+      );
     }
   };
 
@@ -87,10 +103,7 @@ function Login() {
                       </div>
                     </div>
 
-                    <button
-                      type="submit"
-                      className="btn btn-primary w-100 mb-3"
-                    >
+                    <button type="submit" className="btn btn-primary w-100 mb-3">
                       Login <ArrowRight className="ms-2" />
                     </button>
 

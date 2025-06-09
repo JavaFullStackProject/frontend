@@ -4,6 +4,8 @@ import Api from "../Api";
 import MapView from "./MapView";
 import BudgetTracker from "./BudgetTracker";
 import RecommendationEngine from "./RecommendationEngine";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function TripList() {
   const [trips, setTrips] = useState([]);
@@ -50,19 +52,32 @@ function TripList() {
   };
 
   const deleteTrip = async (id) => {
-    const confirmDelete = window.confirm("Are you sure you want to delete this trip?");
-    if (!confirmDelete) return;
+  if (!window.confirm("Are you sure you want to delete this trip?")) return;
 
-    try {
-      const token = localStorage.getItem("token");
-      await Api.delete(`/trips/${id}`, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
-      setTrips((prev) => prev.filter((t) => t.id !== id));
-    } catch (err) {
-      alert("Error deleting trip");
-    }
-  };
+  try {
+    const token = localStorage.getItem("token");
+    await Api.delete(`/trips/${id}`, {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+
+    setTrips((prev) => prev.filter((t) => t.id !== id));
+
+    toast.success("🗑️ Trip deleted successfully", {
+      position: "top-right",
+      autoClose: 3000,
+      pauseOnHover: true,
+      draggable: true,
+    });
+  } catch (err) {
+    toast.error("❌ Error deleting trip", {
+      position: "top-right",
+      autoClose: 4000,
+      pauseOnHover: true,
+      draggable: true,
+    });
+  }
+};
+
 
   if (loading) return <p className="text-center mt-4 text-light">Loading trips...</p>;
 
@@ -107,7 +122,7 @@ function TripList() {
                 style={{ backdropFilter: "blur(10px)" }}
               >
                 <img
-                  src={`https://source.unsplash.com/400x200/?travel,${trip.destination}`}
+                  src={`https://t4.ftcdn.net/jpg/00/65/48/25/360_F_65482539_C0ZozE5gUjCafz7Xq98WB4dW6LAhqKfs.jpg`}
                   alt={trip.destination}
                   className="card-img-top"
                   style={{ objectFit: "cover", height: "150px" }}

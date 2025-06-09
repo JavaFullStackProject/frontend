@@ -79,244 +79,96 @@
     "estimatedCost": 710,
     "actualCost": 687
   },
+
   {
-    "from": "Delhi (copy)",
-    "to": "Agra",
-    "destination": "Agra",
-    "image": "https://tse3.mm.bing.net/th?id=OIP.-CDDfLZYME9QXzMyV1f8wQHaE8&pid=Api&P=0&h=180",
-    "estimatedCost": 325,
-    "actualCost": 362
-  },
-  {
-    "from": "Hyderabad (copy)",
-    "to": "Warangal",
-    "destination": "Warangal",
-    "image": "https://www.goindigo.in/content/dam/s6web/in/en/assets/Destinations/destinations/hyderabad/073616_T_Prince_charminar-1.jpg",
-    "estimatedCost": 650,
-    "actualCost": 713
-  },
-  {
-    "from": "Ahmedabad (copy)",
-    "to": "Surat",
-    "destination": "Surat",
-    "image": "https://i.ytimg.com/vi/vcXQ43k-JBg/maxresdefault.jpg",
-    "estimatedCost": 391,
-    "actualCost": 435
-  },
-  {
-    "from": "Ahmedabad (copy)",
-    "to": "Surat",
-    "destination": "Surat",
-    "image": "https://i.ytimg.com/vi/vcXQ43k-JBg/maxresdefault.jpg",
-    "estimatedCost": 638,
-    "actualCost": 620
-  },
-  {
-    "from": "Patna (copy)",
-    "to": "Gaya",
-    "destination": "Gaya",
-    "image": "https://tse2.mm.bing.net/th?id=OIP.IGVjBVoi7HJ3dil3htcZXwHaEK&pid=Api&P=0&h=180",
-    "estimatedCost": 587,
-    "actualCost": 577
-  },
-  {
-    "from": "Mumbai (copy)",
-    "to": "Pune",
-    "destination": "Pune",
-    "image": "https://tse1.mm.bing.net/th?id=OIP.dtNuq3zISby7QtZ-xcrSqwHaDt&pid=Api&P=0&h=180",
-    "estimatedCost": 345,
-    "actualCost": 440
-  },
-  {
-    "from": "Chennai (copy)",
-    "to": "Coimbatore",
-    "destination": "Coimbatore",
-    "image": "https://assets-news.housing.com/news/wp-content/uploads/2022/07/21234906/Coimbatore1.jpg",
-    "estimatedCost": 529,
-    "actualCost": 586
-  },
-  {
-    "from": "Hyderabad (copy)",
-    "to": "Warangal",
-    "destination": "Warangal",
-    "image": "https://www.goindigo.in/content/dam/s6web/in/en/assets/Destinations/destinations/hyderabad/073616_T_Prince_charminar-1.jpg",
-    "estimatedCost": 723,
-    "actualCost": 753
-  },
-  {
-    "from": "Ahmedabad (copy)",
-    "to": "Surat",
-    "destination": "Surat",
-    "image": "https://i.ytimg.com/vi/vcXQ43k-JBg/maxresdefault.jpg",
-    "estimatedCost": 409,
-    "actualCost": 506
-  },
-  {
-    "from": "Jaipur (copy)",
-    "to": "Jodhpur",
-    "destination": "Jodhpur",
-    "image": "https://tse2.mm.bing.net/th?id=OIP.KQ0tpdd2dkXxXo_-VqQORQHaEc&pid=Api&P=0&h=180",
-    "estimatedCost": 508,
-    "actualCost": 471
-  },
-  {
-    "from": "Delhi (copy)",
-    "to": "Agra",
-    "destination": "Agra",
-    "image": "https://tse3.mm.bing.net/th?id=OIP.-CDDfLZYME9QXzMyV1f8wQHaE8&pid=Api&P=0&h=180",
-    "estimatedCost": 675,
-    "actualCost": 639
-  },
-  {
-    "from": "Lucknow (copy)",
-    "to": "Varanasi",
-    "destination": "Varanasi",
-    "image": "https://tse4.mm.bing.net/th?id=OIP.sUzHv_FwRQTYSF53bD78EQHaEK&pid=Api&P=0&h=180",
-    "estimatedCost": 598,
-    "actualCost": 593
-  },
-  {
-    "from": "Lucknow (copy)",
-    "to": "Varanasi",
-    "destination": "Varanasi",
-    "image": "https://tse4.mm.bing.net/th?id=OIP.sUzHv_FwRQTYSF53bD78EQHaEK&pid=Api&P=0&h=180",
-    "estimatedCost": 456,
-    "actualCost": 447
-  },
-  {
-    "from": "Jaipur (copy)",
-    "to": "Jodhpur",
-    "destination": "Jodhpur",
-    "image": "https://tse2.mm.bing.net/th?id=OIP.KQ0tpdd2dkXxXo_-VqQORQHaEc&pid=Api&P=0&h=180",
-    "estimatedCost": 773,
-    "actualCost": 819
-  },
-  {
-    "from": "Bengaluru (copy)",
-    "to": "Mysore",
-    "destination": "Mysore",
-    "image": "https://tse4.mm.bing.net/th?id=OIP.zw65qV5IOVwy9iH4LS3OGQHaDm&pid=Api&P=0&h=180",
-    "estimatedCost": 628,
+    "from": "Delhi",
+    "to": "Jaipur",
+    "destination": "Jaipur",
+    "image": "https://tse4.mm.bing.net/th?id=OIP._wko7nvWxMwQqvMuDNmDWgHaEo&pid=Api&P=0&h=180",
+    "estimatedCost": 680,
     "actualCost": 705
   },
   {
-    "from": "Jaipur (copy)",
-    "to": "Jodhpur",
-    "destination": "Jodhpur",
-    "image": "https://tse2.mm.bing.net/th?id=OIP.KQ0tpdd2dkXxXo_-VqQORQHaEc&pid=Api&P=0&h=180",
-    "estimatedCost": 727,
-    "actualCost": 799
+    "from": "Mumbai",
+    "to": "Nashik",
+    "destination": "Nashik",
+    "image": "https://tse4.mm.bing.net/th?id=OIP.sYFQhL7cQoyEab-cSpm4qgHaE7&pid=Api&P=0&h=180",
+    "estimatedCost": 450,
+    "actualCost": 498
   },
   {
-    "from": "Hyderabad (copy)",
-    "to": "Warangal",
-    "destination": "Warangal",
-    "image": "https://www.goindigo.in/content/dam/s6web/in/en/assets/Destinations/destinations/hyderabad/073616_T_Prince_charminar-1.jpg",
-    "estimatedCost": 728,
-    "actualCost": 792
+    "from": "Hyderabad",
+    "to": "Nagarjuna Sagar",
+    "destination": "Nagarjuna Sagar",
+    "image": "https://tse4.mm.bing.net/th?id=OIP.XOwZKr3bbdrjoRYuJu8pUwHaEK&pid=Api&P=0&h=180",
+    "estimatedCost": 520,
+    "actualCost": 555
   },
   {
-    "from": "Bengaluru (copy)",
-    "to": "Mysore",
-    "destination": "Mysore",
-    "image": "https://tse4.mm.bing.net/th?id=OIP.zw65qV5IOVwy9iH4LS3OGQHaDm&pid=Api&P=0&h=180",
-    "estimatedCost": 729,
-    "actualCost": 774
+    "from": "Bengaluru",
+    "to": "Chikmagalur",
+    "destination": "Chikmagalur",
+    "image": "https://tse1.mm.bing.net/th?id=OIP.5y1UNzI9upOeUpXGaItcUwHaEK&pid=Api&P=0&h=180",
+    "estimatedCost": 620,
+    "actualCost": 635
   },
   {
-    "from": "Jaipur (copy)",
-    "to": "Jodhpur",
-    "destination": "Jodhpur",
-    "image": "https://tse2.mm.bing.net/th?id=OIP.KQ0tpdd2dkXxXo_-VqQORQHaEc&pid=Api&P=0&h=180",
-    "estimatedCost": 728,
-    "actualCost": 773
+    "from": "Ahmedabad",
+    "to": "Mount Abu",
+    "destination": "Mount Abu",
+    "image": "https://tse3.mm.bing.net/th?id=OIP.yIsAzI_0VHPZtDLzS3E1agHaEK&pid=Api&P=0&h=180",
+    "estimatedCost": 800,
+    "actualCost": 835
   },
   {
-    "from": "Jaipur (copy)",
-    "to": "Jodhpur",
-    "destination": "Jodhpur",
-    "image": "https://tse2.mm.bing.net/th?id=OIP.KQ0tpdd2dkXxXo_-VqQORQHaEc&pid=Api&P=0&h=180",
-    "estimatedCost": 535,
-    "actualCost": 580
+    "from": "Chennai",
+    "to": "Mahabalipuram",
+    "destination": "Mahabalipuram",
+    "image": "https://tse2.mm.bing.net/th?id=OIP.tETRXFO9kPmeXarw4WBnJwHaE7&pid=Api&P=0&h=180",
+    "estimatedCost": 315,
+    "actualCost": 342
   },
   {
-    "from": "Patna (copy)",
-    "to": "Gaya",
-    "destination": "Gaya",
-    "image": "https://tse2.mm.bing.net/th?id=OIP.IGVjBVoi7HJ3dil3htcZXwHaEK&pid=Api&P=0&h=180",
-    "estimatedCost": 503,
-    "actualCost": 568
+    "from": "Kolkata",
+    "to": "Sundarbans",
+    "destination": "Sundarbans",
+    "image": "https://tse1.mm.bing.net/th?id=OIP.pJz7PGd8PEJAtIdafm-EbgHaE7&pid=Api&P=0&h=180",
+    "estimatedCost": 845,
+    "actualCost": 875
   },
   {
-    "from": "Delhi (copy)",
-    "to": "Agra",
-    "destination": "Agra",
-    "image": "https://tse3.mm.bing.net/th?id=OIP.-CDDfLZYME9QXzMyV1f8wQHaE8&pid=Api&P=0&h=180",
-    "estimatedCost": 750,
-    "actualCost": 826
+    "from": "Lucknow",
+    "to": "Ayodhya",
+    "destination": "Ayodhya",
+    "image": "https://tse4.mm.bing.net/th?id=OIP.ezOU7J5UHl9CDzZ_tjXAiAHaE8&pid=Api&P=0&h=180",
+    "estimatedCost": 420,
+    "actualCost": 432
   },
   {
-    "from": "Ahmedabad (copy)",
-    "to": "Surat",
-    "destination": "Surat",
-    "image": "https://i.ytimg.com/vi/vcXQ43k-JBg/maxresdefault.jpg",
-    "estimatedCost": 787,
-    "actualCost": 870
+    "from": "Jaipur",
+    "to": "Pushkar",
+    "destination": "Pushkar",
+    "image": "https://tse2.mm.bing.net/th?id=OIP.meyLJ1lz9GyEnKTW-rHbjgHaE7&pid=Api&P=0&h=180",
+    "estimatedCost": 300,
+    "actualCost": 315
   },
   {
-    "from": "Kolkata (copy)",
-    "to": "Digha",
-    "destination": "Digha",
-    "image": "https://tse1.mm.bing.net/th?id=OIP.Igfzap1Gc9ito1N52yxiSAHaEK&pid=Api&P=0&h=180",
-    "estimatedCost": 508,
-    "actualCost": 564
+    "from": "Patna",
+    "to": "Nalanda",
+    "destination": "Nalanda",
+    "image": "https://tse3.mm.bing.net/th?id=OIP.F-pQj37gTT8jlIph9dpDOgHaEo&pid=Api&P=0&h=180",
+    "estimatedCost": 350,
+    "actualCost": 366
   },
-  {
-    "from": "Lucknow (copy)",
-    "to": "Varanasi",
-    "destination": "Varanasi",
-    "image": "https://tse4.mm.bing.net/th?id=OIP.sUzHv_FwRQTYSF53bD78EQHaEK&pid=Api&P=0&h=180",
-    "estimatedCost": 580,
-    "actualCost": 588
-  },
-  {
-    "from": "Chennai (copy)",
-    "to": "Coimbatore",
-    "destination": "Coimbatore",
-    "image": "https://assets-news.housing.com/news/wp-content/uploads/2022/07/21234906/Coimbatore1.jpg",
-    "estimatedCost": 458,
-    "actualCost": 416
-  },
-  {
-    "from": "Delhi (copy)",
-    "to": "Agra",
-    "destination": "Agra",
-    "image": "https://tse3.mm.bing.net/th?id=OIP.-CDDfLZYME9QXzMyV1f8wQHaE8&pid=Api&P=0&h=180",
-    "estimatedCost": 679,
-    "actualCost": 691
-  },
-  {
-    "from": "Lucknow (copy)",
-    "to": "Varanasi",
-    "destination": "Varanasi",
-    "image": "https://tse4.mm.bing.net/th?id=OIP.sUzHv_FwRQTYSF53bD78EQHaEK&pid=Api&P=0&h=180",
-    "estimatedCost": 500,
-    "actualCost": 483
-  },
-  {
-    "from": "Chennai (copy)",
-    "to": "Coimbatore",
-    "destination": "Coimbatore",
-    "image": "https://assets-news.housing.com/news/wp-content/uploads/2022/07/21234906/Coimbatore1.jpg",
-    "estimatedCost": 672,
-    "actualCost": 748
-  },
-  {
-    "from": "Lucknow (copy)",
-    "to": "Varanasi",
-    "destination": "Varanasi",
-    "image": "https://tse4.mm.bing.net/th?id=OIP.sUzHv_FwRQTYSF53bD78EQHaEK&pid=Api&P=0&h=180",
-    "estimatedCost": 742,
-    "actualCost": 728
-  }
+  {"from": "Shimla", "to": "Manali", "destination": "Manali", "image": "https://tse1.mm.bing.net/th?id=OIP.abc123&pid=Api&P=0&h=180", "estimatedCost": 720, "actualCost": 750},
+  {"from": "Rishikesh", "to": "Haridwar", "destination": "Haridwar", "image": "https://tse2.mm.bing.net/th?id=OIP.def456&pid=Api&P=0&h=180", "estimatedCost": 350, "actualCost": 370},
+  {"from": "Darjeeling", "to": "Gangtok", "destination": "Gangtok", "image": "https://tse3.mm.bing.net/th?id=OIP.ghi789&pid=Api&P=0&h=180", "estimatedCost": 680, "actualCost": 700},
+  {"from": "Udaipur", "to": "Mount Abu", "destination": "Mount Abu", "image": "https://tse4.mm.bing.net/th?id=OIP.jkl012&pid=Api&P=0&h=180", "estimatedCost": 540, "actualCost": 560},
+  {"from": "Bhopal", "to": "Khajuraho", "destination": "Khajuraho", "image": "https://tse1.mm.bing.net/th?id=OIP.mno345&pid=Api&P=0&h=180", "estimatedCost": 620, "actualCost": 640},
+  {"from": "Pondicherry", "to": "Auroville", "destination": "Auroville", "image": "https://tse2.mm.bing.net/th?id=OIP.pqr678&pid=Api&P=0&h=180", "estimatedCost": 280, "actualCost": 300},
+  {"from": "Jodhpur", "to": "Jaisalmer", "destination": "Jaisalmer", "image": "https://tse3.mm.bing.net/th?id=OIP.stu901&pid=Api&P=0&h=180", "estimatedCost": 750, "actualCost": 780},
+  {"from": "Madurai", "to": "Rameswaram", "destination": "Rameswaram", "image": "https://tse4.mm.bing.net/th?id=OIP.vwx234&pid=Api&P=0&h=180", "estimatedCost": 410, "actualCost": 430},
+  {"from": "Guwahati", "to": "Shillong", "destination": "Shillong", "image": "https://tse1.mm.bing.net/th?id=OIP.yza567&pid=Api&P=0&h=180", "estimatedCost": 580, "actualCost": 600},
+  {"from": "Varanasi", "to": "Sarnath", "destination": "Sarnath", "image": "https://tse2.mm.bing.net/th?id=OIP.bcd890&pid=Api&P=0&h=180", "estimatedCost": 320, "actualCost": 340}
+
 ]
