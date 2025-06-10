@@ -41,7 +41,30 @@ const NotificationComponent = () => {
     return () => clearInterval(interval); // Cleanup on unmount
   }, []); // ✅ Empty dependency so it runs once and on interval
 
-  return <ToastContainer />;
+  return (
+    <ToastContainer
+      position="top-right"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={true}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="colored"
+      toastStyle={{
+        borderRadius: "20px",
+        borderLeft: "16px solid #007bff",
+        background: "linear-gradient(90deg, #e3f2fd 0%, #fff 100%)",
+        color: "#222",
+        boxShadow: "0 4px 24px rgba(0,123,255,0.08)",
+        fontSize: "1.05rem",
+        minWidth: "400px",
+      }}
+
+    />
+  );
 };
 
 export default NotificationComponent;

@@ -37,6 +37,7 @@ const TravelGuides = () => {
       bestTime: "October to February",
       views: "100,130+",
       likes: "3192,000+",
+      link: "tirupati-balaji-guide",
     },
     {
       id: 2,
@@ -49,6 +50,7 @@ const TravelGuides = () => {
       bestTime: "November to March",
       views: "100,000+",
       likes: "100,000+",
+      link: "golden-temple-guide",
     },
     {
       id: 3,
@@ -61,6 +63,7 @@ const TravelGuides = () => {
       bestTime: "October to March",
       views: "100,000+",
       likes: "100,000+",
+      link: "meenakshi-temple-guide",
     },
     {
       id: 4,
@@ -73,6 +76,7 @@ const TravelGuides = () => {
       bestTime: "November to February",
       views: "100,000+",
       likes: "100,000+",
+      link: "hampi-ruins-guide",
     },
     {
       id: 5,
@@ -85,6 +89,7 @@ const TravelGuides = () => {
       bestTime: "October to March",
       views: "100,000+",
       likes: "100,000+",
+      link: "khajuraho-temples-guide",
     },
     {
       id: 6,
@@ -97,6 +102,7 @@ const TravelGuides = () => {
       bestTime: "April to November",
       views: "100,000+",
       likes: "100,000+",
+      link: "vaishno-devi-guide",
     },
     // Foreign places...
     {
@@ -255,7 +261,7 @@ const TravelGuides = () => {
                 <div
                   role="button"
                   onClick={() => {
-                    if (guide.link) navigate(`/plantrip/${guide.link}`);
+                    if (guide.link) navigate(`/${guide.link}`);
                   }}
                 >
                   <img
