@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Api from "../../Api";
 import { toast } from "react-toastify";
@@ -50,51 +49,54 @@ const FlightSearch = () => {
   };
 
   const handleBook = async (flight) => {
-  const tripId = localStorage.getItem("selectedTripId");
-  if (!tripId) {
-    toast.warn("⚠️ No trip selected. Please select a trip to save this booking.");
-    return;
-  }
+    const tripId = localStorage.getItem("selectedTripId");
+    if (!tripId) {
+      toast.warn(
+        "⚠️ No trip selected. Please select a trip to save this booking."
+      );
+      return;
+    }
 
-  try {
-    const bookingData = {
-      type: "flight",
-      reference: flight.from + "-" + flight.to,
-      provider: flight.airline || "StaticAirline",
-      name: "Flight from " + flight.from + " to " + flight.to,
-      location: flight.from,
-      details: `Flight on ${flight.date}, Duration: ${flight.duration}, Price: ${flight.price}`,
-      startDate: flight.startDate,
-      endDate: flight.startDate,
-    };
+    try {
+      const bookingData = {
+        type: "flight",
+        reference: flight.from + "-" + flight.to,
+        provider: flight.airline || "StaticAirline",
+        name: "Flight from " + flight.from + " to " + flight.to,
+        location: flight.from,
+        details: `Flight on ${flight.date}, Duration: ${flight.duration}, Price: ${flight.price}`,
+        startDate: flight.startDate,
+        endDate: flight.startDate,
+      };
 
-    await Api.post(`/bookings?tripId=${tripId}`, bookingData);
-    toast.success("✈️ Flight booking saved to itinerary!", {
-      position: "top-right",
-      autoClose: 3000,
-      pauseOnHover: true,
-      draggable: true,
-    });
-    navigate("/dashboard")
-  } catch (err) {
-    console.error(err);
-    toast.error("❌ Failed to save flight booking.", {
-      position: "top-right",
-      autoClose: 4000,
-      pauseOnHover: true,
-      draggable: true,
-    });
-  }
-};
-
+      await Api.post(`/bookings?tripId=${tripId}`, bookingData);
+      toast.success("✈️ Flight booking saved to itinerary!", {
+        position: "top-right",
+        autoClose: 3000,
+        pauseOnHover: true,
+        draggable: true,
+      });
+      navigate("/dashboard");
+    } catch (err) {
+      console.error(err);
+      toast.error("❌ Failed to save flight booking.", {
+        position: "top-right",
+        autoClose: 4000,
+        pauseOnHover: true,
+        draggable: true,
+      });
+    }
+  };
 
   return (
     <div className="container mt-5 pt-4">
-      <div className="card p-4 shadow-sm rounded-4">
-        <h4 className="mb-4">✈️ Search Flights</h4>
+      <div className="card p-4 shadow-lg rounded-4 bg-light bg-opacity-75">
+        <h4 className="mb-4 text-primary text-center">
+          ✈️ <strong>Search Flights</strong>
+        </h4>
         <form onSubmit={handleSearch}>
           <div className="row g-3">
-            <div className="col-md-4">
+            <div className="col-12 col-md-4">
               <input
                 type="text"
                 className="form-control"
@@ -104,7 +106,7 @@ const FlightSearch = () => {
                 required
               />
             </div>
-            <div className="col-md-4">
+            <div className="col-12 col-md-4">
               <input
                 type="text"
                 className="form-control"
@@ -114,7 +116,7 @@ const FlightSearch = () => {
                 required
               />
             </div>
-            <div className="col-md-4">
+            <div className="col-12 col-md-4">
               <input
                 type="date"
                 className="form-control"
@@ -124,23 +126,28 @@ const FlightSearch = () => {
               />
             </div>
           </div>
-          <button type="submit" className="btn btn-primary mt-4 px-4">
-            🔍 Search Flights
-          </button>
+          <div className="text-center mt-4">
+            <button type="submit" className="btn btn-primary px-4">
+              🔍 Search Flights
+            </button>
+          </div>
         </form>
       </div>
 
       {loading ? (
-        <p className="text-center mt-4">Loading flights...</p>
+        <p className="text-center mt-4 text-info">Loading flights...</p>
       ) : error ? (
         <p className="text-center text-danger mt-4">{error}</p>
       ) : (
         <div className="row mt-4">
           {flights.map((flight, index) => (
-            <div className="col-md-4" key={index}>
+            <div className="col-12 col-md-6 col-lg-4" key={index}>
               <div
-                className="card mb-4 shadow-sm border-0 rounded-4"
-                style={{ transition: "transform 0.3s" }}
+                className="card h-100 mb-4 shadow-lg border-0 rounded-4 bg-white"
+                style={{
+                  transition: "transform 0.3s",
+                  cursor: "pointer",
+                }}
                 onMouseEnter={(e) =>
                   (e.currentTarget.style.transform = "scale(1.03)")
                 }
@@ -154,20 +161,20 @@ const FlightSearch = () => {
                     "https://img.freepik.com/free-photo/aeroplane-flying-sunset_53876-13718.jpg"
                   }
                   alt={`${flight.from} to ${flight.to}`}
-                  className="card-img-top"
+                  className="card-img-top rounded-top-4"
                   style={{ height: "200px", objectFit: "cover" }}
                 />
                 <div className="card-body text-center">
-                  <h5 className="card-title">
+                  <h5 className="card-title text-dark">
                     {flight.from} → {flight.to}
                   </h5>
-                  <p className="card-text">
-                    Airline: {flight.airline || "N/A"} <br />
-                    Date: {flight.startDate} <br />
-                    Budget: ₹{flight.budget}
+                  <p className="card-text text-muted">
+                    <strong>Airline:</strong> {flight.airline || "N/A"} <br />
+                    <strong>Date:</strong> {flight.startDate} <br />
+                    <strong>Budget:</strong> ₹{flight.budget}
                   </p>
                   <button
-                    className="btn btn-success w-100"
+                    className="btn btn-success w-100 rounded-pill"
                     onClick={() => handleBook(flight)}
                   >
                     ✅ Book Flight

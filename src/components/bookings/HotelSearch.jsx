@@ -15,7 +15,6 @@ const HotelSearch = () => {
 
   const handleSearch = async (e) => {
     e.preventDefault();
-
     if (new Date(checkin) >= new Date(checkout)) {
       alert("Check-out date must be after check-in date.");
       return;
@@ -31,10 +30,10 @@ const HotelSearch = () => {
       const res = await axios.get(
         `https://api.opentripmap.com/0.1/en/places/radius?radius=5000&lon=${lon}&lat=${lat}&kinds=accomodations&limit=10&apikey=${API_KEY}`
       );
+
       setHotels(res.data.features || []);
-      console.log(res.data);
     } catch (err) {
-      alert("❌ Failed to fetch hotel data. Please try again.");
+      alert("❌ Failed to fetch hotel data.");
       console.error(err);
     } finally {
       setLoading(false);
@@ -61,7 +60,7 @@ const HotelSearch = () => {
       };
 
       await Api.post(`/bookings?tripId=${tripId}`, bookingData);
-      alert("✅ Hotel booking saved to itinerary!");
+      alert("✅ Hotel booking saved!");
       navigate("/dashboard");
     } catch (err) {
       alert("❌ Failed to book hotel.");
@@ -70,12 +69,12 @@ const HotelSearch = () => {
   };
 
   return (
-    <div className="container mt-5 pt-5">
-      <div className="card p-4 shadow-sm rounded-4">
-        <h4 className="mb-4">🏨 Search Hotels</h4>
+    <div className="container py-5 ">
+      <div className="card p-4 shadow-lg rounded-4 bg-white bg-opacity-75 my-5">
+        <h4 className="mb-4 text-center">🏨 Search Hotels</h4>
         <form onSubmit={handleSearch}>
-          <div className="row g-3">
-            <div className="col-md-4">
+          <div className="row g-3 justify-content-center">
+            <div className="col-md-3">
               <input
                 type="text"
                 className="form-control"
@@ -85,7 +84,7 @@ const HotelSearch = () => {
                 required
               />
             </div>
-            <div className="col-md-4">
+            <div className="col-md-3">
               <input
                 type="date"
                 className="form-control"
@@ -94,7 +93,7 @@ const HotelSearch = () => {
                 required
               />
             </div>
-            <div className="col-md-4">
+            <div className="col-md-3">
               <input
                 type="date"
                 className="form-control"
@@ -104,31 +103,41 @@ const HotelSearch = () => {
               />
             </div>
           </div>
-          <button type="submit" className="btn btn-primary mt-4">
-            🔍 Search Hotels
-          </button>
+          <div className="text-center mt-4">
+            <button type="submit" className="btn btn-primary px-5">
+              🔍 Search Hotels
+            </button>
+          </div>
         </form>
       </div>
 
       {loading ? (
-        <p className="text-center mt-4">Loading hotels...</p>
+        <p className="text-center mt-4 fs-5 text-primary">Loading hotels...</p>
       ) : (
-        <div className="row mt-4">
-          {hotels.length === 0 ? (
-            <p className="text-center">No hotels found.</p>
-          ) : (
-            hotels.map((hotel) => (
-              <div className="col-md-4" key={hotel.id}>
-                <div className="card mb-4 shadow-sm">
+        hotels.length > 0 && (
+          <div className="row justify-content-center mt-5">
+            {hotels.map((hotel) => (
+              <div
+                className="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex align-items-stretch"
+                key={hotel.id}
+              >
+                <div
+                  className="card shadow border-0 rounded-4 w-100"
+                  style={{ transition: "transform 0.3s" }}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.transform = "scale(1.03)")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.transform = "scale(1)")
+                  }
+                >
                   <img
-                    src={
-                      "https://www.kayak.co.in/rimg/dimg/dynamic/76/2023/08/eef8369398e2d8ac1191ee20223f219f.webp"
-                    }
-                    alt="Hotel"
+                    src="https://www.kayak.co.in/rimg/dimg/dynamic/76/2023/08/eef8369398e2d8ac1191ee20223f219f.webp"
                     className="card-img-top"
+                    alt="Hotel"
                     style={{ height: "200px", objectFit: "cover" }}
                   />
-                  <div className="card-body">
+                  <div className="card-body text-center">
                     <h5 className="card-title">
                       {hotel.properties.name || "Unnamed Hotel"}
                     </h5>
@@ -144,9 +153,9 @@ const HotelSearch = () => {
                   </div>
                 </div>
               </div>
-            ))
-          )}
-        </div>
+            ))}
+          </div>
+        )
       )}
     </div>
   );
