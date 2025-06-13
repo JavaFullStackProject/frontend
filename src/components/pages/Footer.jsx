@@ -201,9 +201,7 @@ const Footer = () => {
         >
           {/* Social */}
           <div>
-            <h6 className="mb-2" style={{ fontWeight: 600 }}>
-              Follow us
-            </h6>
+            
             <a
               href="#"
               className="me-2"

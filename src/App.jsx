@@ -48,7 +48,9 @@ import LisbonMarketGuide from "./components/pages/LisbonMarketGuide";
 import TaipeiGuide from "./components/pages/TaipeiGuide";
 import LondonGuide from "./components/pages/LondonGuide";
 import BelgiumGuide from "./components/pages/BelgiumGuide";
-
+import Contact from "./components/pages/Contact";
+import PrivacyPolicy from "./components/pages/PrivacyPolicy";
+import BlogPage from "./components/pages/BlogPage";
 
 //for  cards
 
@@ -86,6 +88,9 @@ function App() {
           <Route path="/taipei-guide" element={<TaipeiGuide />} />
           <Route path="/london-guide" element={<LondonGuide />} />
           <Route path="/belgium-guide" element={<BelgiumGuide />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/blog" element={<BlogPage />} />
 
           {/* Cards for various sections */}
           <Route path="upcoming-trips" element={<UpcomingTripsCard />} />
