@@ -16,8 +16,8 @@
     "actualCost": 681
   },
   {
-    "from": "Bengaluru",
     "to": "Mysore",
+    "from": "Bengaluru",
     "destination": "Mysore",
     "image": "https://tse4.mm.bing.net/th?id=OIP.zw65qV5IOVwy9iH4LS3OGQHaDm&pid=Api&P=0&h=180",
     "estimatedCost": 741,

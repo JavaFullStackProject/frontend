@@ -51,6 +51,7 @@ import BelgiumGuide from "./components/pages/BelgiumGuide";
 import Contact from "./components/pages/Contact";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 import BlogPage from "./components/pages/BlogPage";
+import HowItWorks from "./components/pages/HowItWorks";
 
 //for  cards
 
@@ -91,6 +92,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/how-it-works" element={<HowItWorks />} />
 
           {/* Cards for various sections */}
           <Route path="upcoming-trips" element={<UpcomingTripsCard />} />

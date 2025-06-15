@@ -3,8 +3,12 @@ import React, { useState, useRef } from 'react';
 const faqs = [
     {
         question: "What is Travel Planner?",
-        answer:
-            "Travel Planner is a trip planner that generates personalized travel recommendations based on your preferences and budget.",
+        answer: "Travel Planner is an intelligent trip planning platform that generates personalized travel recommendations based on your preferences, budget, and travel history. Our AI-powered system analyzes millions of data points to create optimized itineraries that match your unique travel style.",
+        extended: [
+            "Customizable itineraries for any type of traveler",
+            "Real-time pricing and availability updates",
+            "Collaborative planning tools for group trips"
+        ]
     },
     {
         question: "Is Travel Planner free to use?",
@@ -14,9 +18,8 @@ const faqs = [
     {
         question: "Does Travel Planner support international travel?",
         answer:
-            "Yes, Travel Planner supports both domestic and international destinations depending on availability and travel data.",
-    },
-    {
+            "Absolutely! Travel Planner supports over 15,000 destinations worldwide with comprehensive data for international travel including visa requirements, currency information, and local customs.",
+    }, {
         question: "Do I need to create an account to use Travel Planner?",
         answer:
             "No, you can plan a trip without creating an account. However, creating one lets you save and access your itineraries anytime.",
