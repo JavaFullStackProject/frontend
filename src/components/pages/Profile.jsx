@@ -5,10 +5,10 @@ import "./Profile.css";
 const Profile = ({ user }) => {
     // Default user data if not provided
     const userData = user || {
-        name: "Username",
-        email: "email@gmail.com",
+        name: "rohit",
+        email: "rohit@gmail.com",
         city: "Hyderabad, India",
-        emailVerified: false,
+        emailVerified: true,
     };
 
     return (
