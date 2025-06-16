@@ -256,7 +256,42 @@ const Itinerary = () => {
                         </li>
                       </ul>
 
-                      <div className="mt-auto pt-3 d-flex justify-content-end">
+                      <div className="mt-auto pt-3 d-flex justify-content-between">
+                        <button
+                          className="btn btn-outline-danger"
+                          onClick={async () => {
+                            if (
+                              window.confirm(
+                                "Are you sure you want to delete this booking?"
+                              )
+                            ) {
+                              try {
+                                const token = localStorage.getItem("token");
+                                await Api.delete(`/bookings/${b.id}`, {
+                                  headers: {
+                                    Authorization: `Bearer ${token}`,
+                                  },
+                                });
+                                setBookings((prev) =>
+                                  prev.filter((booking) => booking.id !== b.id)
+                                );
+                              } catch (err) {
+                                alert("❌ Failed to delete booking.");
+                                console.error(err);
+                              }
+                            }
+                          }}
+                        >
+                          <img
+                            src="https://cdn-icons-png.flaticon.com/128/1214/1214428.png"
+                            alt="Delete"
+                            width={20}
+                            height={20}
+                            className="me-2"
+                          />
+                          Delete
+                        </button>
+
                         <button
                           className="btn btn-outline-success"
                           onClick={async (e) => {
