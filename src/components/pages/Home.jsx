@@ -45,7 +45,12 @@ function Home() {
               Plan, manage, and explore your adventures with ease.
             </p>
             <div className="mt-4">
-              <Link to="/register" className="btn btn-light btn-lg me-3">
+              <Link to="/register" className="btn btn-lg me-3" style={{
+                background: "linear-gradient(90deg, #007bff 0%, #00c6ff 100%)",
+                color: "#fff",
+                border: "none",
+                boxShadow: "0 4px 16px rgba(0,123,255,0.15)"
+              }}>
                 Get Started
               </Link>
               <Link to="/login" className="btn btn-outline-light btn-lg">
@@ -62,17 +67,41 @@ function Home() {
 
       {/* Features Section */}
       <div className="container my-5">
+        <h2 className="text-center fw-bold mb-5" style={{ letterSpacing: "0.01em" }}>
+          What You Can Do
+        </h2>
         <div className="row text-center">
           <div className="col-md-4 mb-4">
-            <div className="card h-100 shadow-sm">
+            <div
+              className="card h-100 shadow-sm"
+              style={{
+                borderRadius: "18px",
+                border: "none",
+                transition: "transform 0.18s, box-shadow 0.18s",
+              }}
+              onMouseOver={e => {
+                e.currentTarget.style.transform = "translateY(-6px) scale(1.03)";
+                e.currentTarget.style.boxShadow = "0 8px 32px rgba(0,123,255,0.10)";
+              }}
+              onMouseOut={e => {
+                e.currentTarget.style.transform = "none";
+                e.currentTarget.style.boxShadow = "0 4px 16px rgba(0,123,255,0.08)";
+              }}
+            >
               <img
                 src="https://tse3.mm.bing.net/th?id=OIP.sORN-de06Odb8Mh3-stDHwHaED&pid=Api&P=0&h=180"
                 className="card-img-top"
                 alt="Plan Trip"
+                style={{
+                  borderTopLeftRadius: "18px",
+                  borderTopRightRadius: "18px",
+                  height: "180px",
+                  objectFit: "cover",
+                }}
               />
               <div className="card-body">
-                <h5 className="card-title">Create Your Trip</h5>
-                <p className="card-text">
+                <h5 className="card-title fw-bold">Create Your Trip</h5>
+                <p className="card-text text-secondary">
                   Plan each step of your journey with detailed itineraries and
                   maps.
                 </p>
@@ -80,15 +109,36 @@ function Home() {
             </div>
           </div>
           <div className="col-md-4 mb-4">
-            <div className="card h-100 shadow-sm">
+            <div
+              className="card h-100 shadow-sm"
+              style={{
+                borderRadius: "18px",
+                border: "none",
+                transition: "transform 0.18s, box-shadow 0.18s",
+              }}
+              onMouseOver={e => {
+                e.currentTarget.style.transform = "translateY(-6px) scale(1.03)";
+                e.currentTarget.style.boxShadow = "0 8px 32px rgba(126,87,194,0.10)";
+              }}
+              onMouseOut={e => {
+                e.currentTarget.style.transform = "none";
+                e.currentTarget.style.boxShadow = "0 4px 16px rgba(126,87,194,0.08)";
+              }}
+            >
               <img
                 src="https://thetravellingfool.com/wp-content/uploads/2016/11/Holiday_20Flights-XL.jpg"
                 className="card-img-top"
                 alt="Manage Trips"
+                style={{
+                  borderTopLeftRadius: "18px",
+                  borderTopRightRadius: "18px",
+                  height: "180px",
+                  objectFit: "cover",
+                }}
               />
               <div className="card-body">
-                <h5 className="card-title">Manage Your Trips</h5>
-                <p className="card-text">
+                <h5 className="card-title fw-bold">Manage Your Trips</h5>
+                <p className="card-text text-secondary">
                   View, update, and keep track of your travel plans in one
                   place.
                 </p>
@@ -96,15 +146,36 @@ function Home() {
             </div>
           </div>
           <div className="col-md-4 mb-4">
-            <div className="card h-100 shadow-sm">
+            <div
+              className="card h-100 shadow-sm"
+              style={{
+                borderRadius: "18px",
+                border: "none",
+                transition: "transform 0.18s, box-shadow 0.18s",
+              }}
+              onMouseOver={e => {
+                e.currentTarget.style.transform = "translateY(-6px) scale(1.03)";
+                e.currentTarget.style.boxShadow = "0 8px 32px rgba(0,150,136,0.10)";
+              }}
+              onMouseOut={e => {
+                e.currentTarget.style.transform = "none";
+                e.currentTarget.style.boxShadow = "0 4px 16px rgba(0,150,136,0.08)";
+              }}
+            >
               <img
                 src="https://images.unsplash.com/photo-1493558103817-58b2924bce98"
                 className="card-img-top"
                 alt="Organize Plans"
+                style={{
+                  borderTopLeftRadius: "18px",
+                  borderTopRightRadius: "18px",
+                  height: "180px",
+                  objectFit: "cover",
+                }}
               />
               <div className="card-body">
-                <h5 className="card-title">Stay Organized</h5>
-                <p className="card-text">
+                <h5 className="card-title fw-bold">Stay Organized</h5>
+                <p className="card-text text-secondary">
                   All your bookings, notes, and ideas neatly stored and
                   accessible.
                 </p>
@@ -243,10 +314,10 @@ function Home() {
       <div className="container my-5">
         <h4 className="text-center fw-bold mb-4">Trusted By</h4>
         <div className="d-flex flex-wrap justify-content-center align-items-center gap-4">
-          <img src="https://logos-world.net/wp-content/uploads/2020/10/Airbnb-Logo.png" alt="Airbnb" style={{ height: 50 }} /> <br /> <br />
-          <img src="https://www.cdnlogo.com/logos/b/94/booking-com.svg" alt="Booking.com" style={{ height: 32 }} /> <br />
-          <img src="https://cdn.worldvectorlogo.com/logos/expedia.svg" alt="Expedia" style={{ height: 32 }} /> <br /> <br />
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/TripAdvisor_Logo.svg/1200px-TripAdvisor_Logo.svg.png" alt="Tripadvisor" style={{ height: 32 }} /> <br /> <br />
+          <img src="https://logos-world.net/wp-content/uploads/2020/10/Airbnb-Logo.png" alt="Airbnb" className="trusted-logo" style={{ height: 50 }} /> <br /> <br />
+          <img src="https://www.cdnlogo.com/logos/b/94/booking-com.svg" alt="Booking.com" className="trusted-logo" style={{ height: 32 }} /> <br />
+          <img src="https://cdn.worldvectorlogo.com/logos/expedia.svg" alt="Expedia" className="trusted-logo" style={{ height: 32 }} /> <br /> <br />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/TripAdvisor_Logo.svg/1200px-TripAdvisor_Logo.svg.png" alt="Tripadvisor" className="trusted-logo" style={{ height: 32 }} /> <br /> <br />
         </div>
       </div>
 
@@ -258,10 +329,17 @@ function Home() {
           <h4 className="text-center fw-bold mb-4">Get Travel Tips &amp; Updates</h4>
           <form className="row justify-content-center">
             <div className="col-md-6 col-lg-4">
-              <input type="email" className="form-control form-control-lg mb-2" placeholder="Enter your email" />
+              <input
+                type="email"
+                className="form-control form-control-lg mb-2 rounded-pill shadow-sm"
+                placeholder="Enter your email"
+              />
             </div>
             <div className="col-auto">
-              <button type="submit" className="btn btn-primary btn-lg mb-2">
+              <button type="submit" className="btn btn-primary btn-lg mb-2 rounded-pill px-4" style={{
+                background: "linear-gradient(90deg, #007bff 0%, #00c6ff 100%)",
+                border: "none"
+              }}>
                 Subscribe
               </button>
             </div>
@@ -344,3 +422,5 @@ function Home() {
 }
 
 export default Home;
+
+

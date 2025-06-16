@@ -370,5 +370,653 @@
       "description": "Pristine beach offering sunset views.",
       "image": "https://www.shutterstock.com/search/alleppey-beach"
     }
+  ],
+  "Surat": [
+    {
+      "name": "Dumas Beach",
+      "description": "Popular urban beach known for its black sand.",
+      "image": "https://example.com/images/surat1.jpg"
+    },
+    {
+      "name": "Sarthana Nature Park",
+      "description": "Large zoo and botanical garden in Surat.",
+      "image": "https://example.com/images/surat2.jpg"
+    }
+  ],
+  "Vadodara": [
+    {
+      "name": "Laxmi Vilas Palace",
+      "description": "Grand palace with impressive architecture and museum.",
+      "image": "https://example.com/images/vadodara1.jpg"
+    },
+    {
+      "name": "Sayaji Baug",
+      "description": "Expansive public garden with zoo and museum.",
+      "image": "https://example.com/images/vadodara2.jpg"
+    }
+  ],
+  "Rajkot": [
+    {
+      "name": "Watson Museum",
+      "description": "Museum showcasing colonial history and artifacts.",
+      "image": "https://example.com/images/rajkot1.jpg"
+    },
+    {
+      "name": "Rotary Dolls Museum",
+      "description": "Unique museum featuring dolls from around the world.",
+      "image": "https://example.com/images/rajkot2.jpg"
+    }
+  ],
+  "Jamnagar": [
+    {
+      "name": "Lakhota Lake",
+      "description": "Scenic lake with a historic palace in the center.",
+      "image": "https://example.com/images/jamnagar1.jpg"
+    },
+    {
+      "name": "Marine National Park",
+      "description": "India's first marine sanctuary with rich biodiversity.",
+      "image": "https://example.com/images/jamnagar2.jpg"
+    }
+  ],
+  "Gandhinagar": [
+    {
+      "name": "Akshardham Temple",
+      "description": "Magnificent Hindu temple with intricate carvings.",
+      "image": "https://example.com/images/gandhinagar1.jpg"
+    },
+    {
+      "name": "Indroda Nature Park",
+      "description": "Park known as India's Jurassic Park.",
+      "image": "https://example.com/images/gandhinagar2.jpg"
+    }
+  ],
+  "Patna": [
+    {
+      "name": "Golghar",
+      "description": "Historic granary with panoramic city views.",
+      "image": "https://example.com/images/patna1.jpg"
+    },
+    {
+      "name": "Patna Museum",
+      "description": "Museum with ancient artifacts and art.",
+      "image": "https://example.com/images/patna2.jpg"
+    }
+  ],
+  "Gaya": [
+    {
+      "name": "Mahabodhi Temple",
+      "description": "UNESCO World Heritage Buddhist temple.",
+      "image": "https://example.com/images/gaya1.jpg"
+    },
+    {
+      "name": "Vishnupad Temple",
+      "description": "Sacred Hindu temple on the banks of Falgu river.",
+      "image": "https://example.com/images/gaya2.jpg"
+    }
+  ],
+  "Bodh Gaya": [
+    {
+      "name": "Great Buddha Statue",
+      "description": "Imposing statue symbolizing peace and enlightenment.",
+      "image": "https://example.com/images/bodhgaya1.jpg"
+    },
+    {
+      "name": "Bodhi Tree",
+      "description": "Sacred fig tree under which Buddha attained enlightenment.",
+      "image": "https://example.com/images/bodhgaya2.jpg"
+    }
+  ],
+  "Ranchi": [
+    {
+      "name": "Rock Garden",
+      "description": "Beautifully landscaped garden with waterfalls.",
+      "image": "https://example.com/images/ranchi1.jpg"
+    },
+    {
+      "name": "Tagore Hill",
+      "description": "Hilltop offering panoramic views of Ranchi.",
+      "image": "https://example.com/images/ranchi2.jpg"
+    }
+  ],
+  "Jamshedpur": [
+    {
+      "name": "Jubilee Park",
+      "description": "Sprawling park with fountains and a zoo.",
+      "image": "https://example.com/images/jamshedpur1.jpg"
+    },
+    {
+      "name": "Dimna Lake",
+      "description": "Picturesque lake ideal for picnics and boating.",
+      "image": "https://example.com/images/jamshedpur2.jpg"
+    }
+  ],
+  "Bhilai": [
+    {
+      "name": "Maitri Bagh",
+      "description": "Large zoo and garden complex.",
+      "image": "https://example.com/images/bhilai1.jpg"
+    },
+    {
+      "name": "Civic Center",
+      "description": "Popular shopping and entertainment hub.",
+      "image": "https://example.com/images/bhilai2.jpg"
+    }
+  ],
+  "Raipur": [
+    {
+      "name": "Nandan Van Zoo",
+      "description": "Modern zoo with diverse animal species.",
+      "image": "https://example.com/images/raipur1.jpg"
+    },
+    {
+      "name": "Purkhouti Muktangan",
+      "description": "Open-air museum showcasing tribal culture.",
+      "image": "https://example.com/images/raipur2.jpg"
+    }
+  ],
+  "Bilaspur": [
+    {
+      "name": "Achanakmar Wildlife Sanctuary",
+      "description": "Wildlife sanctuary with rich flora and fauna.",
+      "image": "https://example.com/images/bilaspur1.jpg"
+    },
+    {
+      "name": "Kanan Pendari Zoo",
+      "description": "Popular zoo with a variety of animals.",
+      "image": "https://example.com/images/bilaspur2.jpg"
+    }
+  ],
+  "Panaji": [
+    {
+      "name": "Miramar Beach",
+      "description": "Urban beach popular for evening strolls.",
+      "image": "https://example.com/images/panaji1.jpg"
+    },
+    {
+      "name": "Our Lady of the Immaculate Conception Church",
+      "description": "Iconic white church in the heart of Panaji.",
+      "image": "https://example.com/images/panaji2.jpg"
+    }
+  ],
+  "Margao": [
+    {
+      "name": "Colva Beach",
+      "description": "Famous beach with white sand and palm trees.",
+      "image": "https://example.com/images/margao1.jpg"
+    },
+    {
+      "name": "Church of Holy Spirit",
+      "description": "Historic church with beautiful architecture.",
+      "image": "https://example.com/images/margao2.jpg"
+    }
+  ],
+  "Mapusa": [
+    {
+      "name": "Mapusa Market",
+      "description": "Bustling market known for local produce and crafts.",
+      "image": "https://example.com/images/mapusa1.jpg"
+    },
+    {
+      "name": "St. Jerome Church",
+      "description": "Prominent church with annual feast celebrations.",
+      "image": "https://example.com/images/mapusa2.jpg"
+    }
+  ],
+  "Vasco da Gama": [
+    {
+      "name": "Baina Beach",
+      "description": "Popular beach for water sports and sunsets.",
+      "image": "https://example.com/images/vasco1.jpg"
+    },
+    {
+      "name": "Japanese Garden",
+      "description": "Serene garden with sea views and walking paths.",
+      "image": "https://example.com/images/vasco2.jpg"
+    }
+  ],
+  "Silvassa": [
+    {
+      "name": "Vanganga Lake Garden",
+      "description": "Beautiful garden with a central lake.",
+      "image": "https://example.com/images/silvassa1.jpg"
+    },
+    {
+      "name": "Lion Safari Wildlife Park",
+      "description": "Wildlife park with lions and other animals.",
+      "image": "https://example.com/images/silvassa2.jpg"
+    }
+  ],
+  "Daman": [
+    {
+      "name": "Devka Beach",
+      "description": "Popular beach with amusement park nearby.",
+      "image": "https://example.com/images/daman1.jpg"
+    },
+    {
+      "name": "Moti Daman Fort",
+      "description": "Historic fort with colonial architecture.",
+      "image": "https://example.com/images/daman2.jpg"
+    }
+  ],
+  "Diu": [
+    {
+      "name": "Nagoa Beach",
+      "description": "Famous beach with palm-fringed shores.",
+      "image": "https://example.com/images/diu1.jpg"
+    },
+    {
+      "name": "Diu Fort",
+      "description": "Imposing fort with sea views and history.",
+      "image": "https://example.com/images/diu2.jpg"
+    }
+  ],
+  "Port Blair": [
+    {
+      "name": "Cellular Jail",
+      "description": "Historic colonial prison turned museum.",
+      "image": "https://example.com/images/portblair1.jpg"
+    },
+    {
+      "name": "Corbyn's Cove Beach",
+      "description": "Popular beach for swimming and water sports.",
+      "image": "https://example.com/images/portblair2.jpg"
+    }
+  ],
+  "Havelock Island": [
+    {
+      "name": "Radhanagar Beach",
+      "description": "Renowned for its white sand and turquoise water.",
+      "image": "https://example.com/images/havelock1.jpg"
+    },
+    {
+      "name": "Elephant Beach",
+      "description": "Famous for snorkeling and coral reefs.",
+      "image": "https://example.com/images/havelock2.jpg"
+    }
+  ],
+  "Neil Island": [
+    {
+      "name": "Bharatpur Beach",
+      "description": "Shallow beach ideal for swimming and snorkeling.",
+      "image": "https://example.com/images/neil1.jpg"
+    },
+    {
+      "name": "Natural Bridge",
+      "description": "Unique rock formation and scenic spot.",
+      "image": "https://example.com/images/neil2.jpg"
+    }
+  ],
+  "Leh": [
+    {
+      "name": "Shanti Stupa",
+      "description": "White-domed Buddhist stupa with panoramic views.",
+      "image": "https://example.com/images/leh1.jpg"
+    },
+    {
+      "name": "Leh Palace",
+      "description": "Historic palace overlooking the town.",
+      "image": "https://example.com/images/leh2.jpg"
+    }
+  ],
+  "Kargil": [
+    {
+      "name": "Kargil War Memorial",
+      "description": "Memorial honoring soldiers of the Kargil War.",
+      "image": "https://example.com/images/kargil1.jpg"
+    },
+    {
+      "name": "Suru Valley",
+      "description": "Picturesque valley with stunning landscapes.",
+      "image": "https://example.com/images/kargil2.jpg"
+    }
+  ],
+  "Srinagar": [
+    {
+      "name": "Dal Lake",
+      "description": "Famous lake with houseboats and shikaras.",
+      "image": "https://example.com/images/srinagar1.jpg"
+    },
+    {
+      "name": "Mughal Gardens",
+      "description": "Beautiful terraced gardens from Mughal era.",
+      "image": "https://example.com/images/srinagar2.jpg"
+    }
+  ],
+  "Gulmarg": [
+    {
+      "name": "Gulmarg Gondola",
+      "description": "One of the highest cable cars in the world.",
+      "image": "https://example.com/images/gulmarg1.jpg"
+    },
+    {
+      "name": "Alpather Lake",
+      "description": "Scenic lake surrounded by snow-capped mountains.",
+      "image": "https://example.com/images/gulmarg2.jpg"
+    }
+  ],
+  "Pahalgam": [
+    {
+      "name": "Betaab Valley",
+      "description": "Picturesque valley with lush greenery.",
+      "image": "https://example.com/images/pahalgam1.jpg"
+    },
+    {
+      "name": "Aru Valley",
+      "description": "Charming valley ideal for trekking and camping.",
+      "image": "https://example.com/images/pahalgam2.jpg"
+    }
+  ],
+  "Jammu": [
+    {
+      "name": "Vaishno Devi Temple",
+      "description": "Famous Hindu pilgrimage site in the Trikuta Mountains.",
+      "image": "https://example.com/images/jammu1.jpg"
+    },
+    {
+      "name": "Raghunath Temple",
+      "description": "Large temple complex dedicated to Lord Rama.",
+      "image": "https://example.com/images/jammu2.jpg"
+    }
+  ],
+  "Dehradun": [
+    {
+      "name": "Robber's Cave",
+      "description": "Natural cave formation with a river running through.",
+      "image": "https://example.com/images/dehradun1.jpg"
+    },
+    {
+      "name": "Forest Research Institute",
+      "description": "Colonial-era institute with grand architecture.",
+      "image": "https://example.com/images/dehradun2.jpg"
+    }
+  ],
+  "Mussoorie": [
+    {
+      "name": "Kempty Falls",
+      "description": "Popular waterfall and picnic spot.",
+      "image": "https://example.com/images/mussoorie1.jpg"
+    },
+    {
+      "name": "Gun Hill",
+      "description": "Hilltop viewpoint with panoramic vistas.",
+      "image": "https://example.com/images/mussoorie2.jpg"
+    }
+  ],
+  "Ranikhet": [
+    {
+      "name": "Chaubatia Gardens",
+      "description": "Orchards and gardens with Himalayan views.",
+      "image": "https://example.com/images/ranikhet1.jpg"
+    },
+    {
+      "name": "Jhula Devi Temple",
+      "description": "Ancient temple surrounded by bells.",
+      "image": "https://example.com/images/ranikhet2.jpg"
+    }
+  ],
+  "Mount Abu": [
+    {
+      "name": "Nakki Lake",
+      "description": "Scenic lake surrounded by hills.",
+      "image": "https://example.com/images/mtabu1.jpg"
+    },
+    {
+      "name": "Dilwara Temples",
+      "description": "Exquisite Jain temples with marble carvings.",
+      "image": "https://example.com/images/mtabu2.jpg"
+    }
+  ],
+  "Ajmer": [
+    {
+      "name": "Ajmer Sharif Dargah",
+      "description": "Famous Sufi shrine attracting pilgrims.",
+      "image": "https://example.com/images/ajmer1.jpg"
+    },
+    {
+      "name": "Ana Sagar Lake",
+      "description": "Artificial lake with scenic surroundings.",
+      "image": "https://example.com/images/ajmer2.jpg"
+    }
+  ],
+  "Pushkar": [
+    {
+      "name": "Pushkar Lake",
+      "description": "Sacred lake surrounded by ghats and temples.",
+      "image": "https://example.com/images/pushkar1.jpg"
+    },
+    {
+      "name": "Brahma Temple",
+      "description": "Rare temple dedicated to Lord Brahma.",
+      "image": "https://example.com/images/pushkar2.jpg"
+    }
+  ],
+  "Alwar": [
+    {
+      "name": "Bala Quila Fort",
+      "description": "Hilltop fort with panoramic city views.",
+      "image": "https://example.com/images/alwar1.jpg"
+    },
+    {
+      "name": "Sariska Tiger Reserve",
+      "description": "Wildlife sanctuary known for tigers.",
+      "image": "https://example.com/images/alwar2.jpg"
+    }
+  ],
+  "Bikaner": [
+    {
+      "name": "Junagarh Fort",
+      "description": "Imposing fort with ornate interiors.",
+      "image": "https://example.com/images/bikaner1.jpg"
+    },
+    {
+      "name": "Karni Mata Temple",
+      "description": "Unique temple known for its resident rats.",
+      "image": "https://example.com/images/bikaner2.jpg"
+    }
+  ],
+  "Mathura": [
+    {
+      "name": "Krishna Janmabhoomi",
+      "description": "Sacred birthplace of Lord Krishna.",
+      "image": "https://example.com/images/mathura1.jpg"
+    },
+    {
+      "name": "Dwarkadhish Temple",
+      "description": "Vibrant temple dedicated to Lord Krishna.",
+      "image": "https://example.com/images/mathura2.jpg"
+    }
+  ],
+  "Vrindavan": [
+    {
+      "name": "Banke Bihari Temple",
+      "description": "Famous temple dedicated to Lord Krishna.",
+      "image": "https://example.com/images/vrindavan1.jpg"
+    },
+    {
+      "name": "Prem Mandir",
+      "description": "Magnificent temple with intricate carvings.",
+      "image": "https://example.com/images/vrindavan2.jpg"
+    }
+  ],
+  "Kanpur": [
+    {
+      "name": "Allen Forest Zoo",
+      "description": "Large zoo with diverse animal species.",
+      "image": "https://example.com/images/kanpur1.jpg"
+    },
+    {
+      "name": "JK Temple",
+      "description": "Modern Hindu temple with unique architecture.",
+      "image": "https://example.com/images/kanpur2.jpg"
+    }
+  ],
+  "Allahabad": [
+    {
+      "name": "Triveni Sangam",
+      "description": "Confluence of three sacred rivers.",
+      "image": "https://example.com/images/allahabad1.jpg"
+    },
+    {
+      "name": "Anand Bhavan",
+      "description": "Historic house museum of Nehru family.",
+      "image": "https://example.com/images/allahabad2.jpg"
+    }
+  ],
+  "Meerut": [
+    {
+      "name": "Augarnath Temple",
+      "description": "Historic temple associated with the 1857 revolt.",
+      "image": "https://example.com/images/meerut1.jpg"
+    },
+    {
+      "name": "Gandhi Bagh",
+      "description": "Beautiful garden in the heart of Meerut.",
+      "image": "https://example.com/images/meerut2.jpg"
+    }
+  ],
+  "Gorakhpur": [
+    {
+      "name": "Gorakhnath Temple",
+      "description": "Famous temple dedicated to Guru Gorakhnath.",
+      "image": "https://example.com/images/gorakhpur1.jpg"
+    },
+    {
+      "name": "Vishnu Temple",
+      "description": "Ancient temple with beautiful architecture.",
+      "image": "https://example.com/images/gorakhpur2.jpg"
+    }
+  ],
+  "Faizabad": [
+    {
+      "name": "Gulab Bari",
+      "description": "Garden complex with tombs and fountains.",
+      "image": "https://example.com/images/faizabad1.jpg"
+    },
+    {
+      "name": "Guptar Ghat",
+      "description": "Sacred ghat on the banks of Saryu river.",
+      "image": "https://example.com/images/faizabad2.jpg"
+    }
+  ],
+  "Chandigarh": [
+    {
+      "name": "Rock Garden",
+      "description": "Unique garden made from industrial waste.",
+      "image": "https://example.com/images/chandigarh1.jpg"
+    },
+    {
+      "name": "Sukhna Lake",
+      "description": "Man-made lake ideal for boating and walks.",
+      "image": "https://example.com/images/chandigarh2.jpg"
+    }
+  ],
+  "Ambala": [
+    {
+      "name": "Rani Ka Talab",
+      "description": "Historic pond with religious significance.",
+      "image": "https://example.com/images/ambala1.jpg"
+    },
+    {
+      "name": "Holy Redeemer Church",
+      "description": "Colonial-era church with beautiful interiors.",
+      "image": "https://example.com/images/ambala2.jpg"
+    }
+  ],
+  "Panipat": [
+    {
+      "name": "Panipat Museum",
+      "description": "Museum showcasing the history of Panipat battles.",
+      "image": "https://example.com/images/panipat1.jpg"
+    },
+    {
+      "name": "Kabuli Bagh Mosque",
+      "description": "Historic mosque built by Babur.",
+      "image": "https://example.com/images/panipat2.jpg"
+    }
+  ],
+  "Hisar": [
+    {
+      "name": "Firoz Shah Palace Complex",
+      "description": "Historic palace and mosque complex.",
+      "image": "https://example.com/images/hisar1.jpg"
+    },
+    {
+      "name": "Blue Bird Lake",
+      "description": "Serene lake and bird sanctuary.",
+      "image": "https://example.com/images/hisar2.jpg"
+    }
+  ],
+  "Rohtak": [
+    {
+      "name": "Tilyar Lake",
+      "description": "Popular lake with boating and picnic spots.",
+      "image": "https://example.com/images/rohtak1.jpg"
+    },
+    {
+      "name": "Asthal Bohar Monastery",
+      "description": "Ancient monastery with historical significance.",
+      "image": "https://example.com/images/rohtak2.jpg"
+    }
+  ],
+  "Kurukshetra": [
+    {
+      "name": "Brahma Sarovar",
+      "description": "Sacred water tank with religious importance.",
+      "image": "https://example.com/images/kurukshetra1.jpg"
+    },
+    {
+      "name": "Jyotisar",
+      "description": "Mythological site where Bhagavad Gita was delivered.",
+      "image": "https://example.com/images/kurukshetra2.jpg"
+    }
+  ],
+  "Faridabad": [
+    {
+      "name": "Surajkund",
+      "description": "Ancient reservoir and site of crafts fair.",
+      "image": "https://example.com/images/faridabad1.jpg"
+    },
+    {
+      "name": "Badkhal Lake",
+      "description": "Scenic lake surrounded by hills.",
+      "image": "https://example.com/images/faridabad2.jpg"
+    }
+  ],
+  "Sonipat": [
+    {
+      "name": "Khwaja Khizr Tomb",
+      "description": "Historic tomb with Mughal architecture.",
+      "image": "https://example.com/images/sonipat1.jpg"
+    },
+    {
+      "name": "Mughal Canal",
+      "description": "Ancient canal built during Mughal era.",
+      "image": "https://example.com/images/sonipat2.jpg"
+    }
+  ],
+  "Yamunanagar": [
+    {
+      "name": "Kalesar National Park",
+      "description": "Wildlife sanctuary with diverse flora and fauna.",
+      "image": "https://example.com/images/yamunanagar1.jpg"
+    },
+    {
+      "name": "Chaneti Buddhist Stupa",
+      "description": "Ancient stupa dating back to 3rd century BC.",
+      "image": "https://example.com/images/yamunanagar2.jpg"
+    }
+  ],
+  "Rewari": [
+    {
+      "name": "Rewari Steam Locomotive Shed",
+      "description": "Heritage shed with vintage steam engines.",
+      "image": "https://example.com/images/rewari1.jpg"
+    },
+    {
+      "name": "BMG Mall",
+      "description": "Popular shopping and entertainment destination.",
+      "image": "https://example.com/images/rewari2.jpg"
+    }
   ]
 }

@@ -41,14 +41,14 @@ const PlanTrip = () => {
 
   return (
     <div className="position-relative min-vh-100 overflow-hidden">
-      {/* Background Video */}
+      {/* Background Video with Gradient Overlay */}
       <video
         autoPlay
         muted
         loop
         playsInline
         className="position-absolute w-100 h-100"
-        style={{ objectFit: "cover", zIndex: "-1" }}
+        style={{ objectFit: "cover", zIndex: "-2" }}
       >
         <source
           src="https://cdn.pixabay.com/video/2024/03/13/204006-923133925_large.mp4"
@@ -56,8 +56,16 @@ const PlanTrip = () => {
         />
         Your browser does not support the video tag.
       </video>
+      <div
+        className="position-absolute top-0 start-0 w-100 h-100"
+        style={{
+          background:
+            "linear-gradient(120deg, rgba(0,123,255,0.35) 0%, rgba(0,0,0,0.55) 100%)",
+          zIndex: "-1",
+        }}
+      ></div>
 
-      {/* Transparent Card Form */}
+      {/* Glassmorphism Card Form */}
       <div className="d-flex align-items-center justify-content-center min-vh-100">
         <div className="container">
           <div className="row justify-content-center">
@@ -65,15 +73,36 @@ const PlanTrip = () => {
               <div
                 className="card shadow-lg border-0 rounded-4 p-4"
                 style={{
-                  backgroundColor: "rgba(255, 255, 255, 0.1)",
-                  backdropFilter: "blur(10px)",
+                  background: "rgba(255,255,255,0.15)",
+                  backdropFilter: "blur(16px)",
                   color: "#fff",
-                  border: "1px solid rgba(255, 255, 255, 0.3)",
+                  border: "1.5px solid rgba(255,255,255,0.25)",
+                  boxShadow: "0 8px 32px rgba(0,123,255,0.12)",
                 }}
               >
-                <h2 className="text-center text-light fw-bold mb-4">
-                  Plan Your Trip
-                </h2>
+                <div className="text-center mb-4">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/201/201623.png"
+                    alt="Plan Trip"
+                    width={56}
+                    height={56}
+                    style={{
+                      background: "rgba(0,123,255,0.12)",
+                      borderRadius: "50%",
+                      padding: 10,
+                      marginBottom: 8,
+                    }}
+                  />
+                  <h2 className="fw-bold mb-1" style={{ color: "#fff" }}>
+                    Plan Your Trip
+                  </h2>
+                  <div
+                    className="text-info mb-2"
+                    style={{ fontWeight: 500 }}
+                  >
+                    Dream. Plan. Go!
+                  </div>
+                </div>
                 <form onSubmit={handleSubmit}>
                   <div className="mb-3">
                     <label className="form-label fw-semibold text-light">
@@ -81,38 +110,42 @@ const PlanTrip = () => {
                     </label>
                     <input
                       type="text"
-                      className="form-control"
+                      className="form-control rounded-pill px-4 py-2 shadow-sm"
                       value={destination}
                       onChange={(e) => setDestination(e.target.value)}
                       required
                       placeholder="e.g., Goa, Kashmir"
+                      style={{ background: "rgba(255,255,255,0.7)" }}
                     />
                   </div>
 
-                  <div className="mb-3">
-                    <label className="form-label fw-semibold text-light">
-                      Start Date
-                    </label>
-                    <input
-                      type="date"
-                      className="form-control"
-                      value={startDate}
-                      onChange={(e) => setStartDate(e.target.value)}
-                      required
-                    />
-                  </div>
-
-                  <div className="mb-3">
-                    <label className="form-label fw-semibold text-light">
-                      End Date
-                    </label>
-                    <input
-                      type="date"
-                      className="form-control"
-                      value={endDate}
-                      onChange={(e) => setEndDate(e.target.value)}
-                      required
-                    />
+                  <div className="row">
+                    <div className="col-6 mb-3">
+                      <label className="form-label fw-semibold text-light">
+                        Start Date
+                      </label>
+                      <input
+                        type="date"
+                        className="form-control rounded-pill px-4 py-2 shadow-sm"
+                        value={startDate}
+                        onChange={(e) => setStartDate(e.target.value)}
+                        required
+                        style={{ background: "rgba(255,255,255,0.7)" }}
+                      />
+                    </div>
+                    <div className="col-6 mb-3">
+                      <label className="form-label fw-semibold text-light">
+                        End Date
+                      </label>
+                      <input
+                        type="date"
+                        className="form-control rounded-pill px-4 py-2 shadow-sm"
+                        value={endDate}
+                        onChange={(e) => setEndDate(e.target.value)}
+                        required
+                        style={{ background: "rgba(255,255,255,0.7)" }}
+                      />
+                    </div>
                   </div>
 
                   <div className="mb-4">
@@ -121,19 +154,29 @@ const PlanTrip = () => {
                     </label>
                     <input
                       type="number"
-                      className="form-control"
+                      className="form-control rounded-pill px-4 py-2 shadow-sm"
                       value={budget}
                       onChange={(e) => setBudget(e.target.value)}
                       required
                       placeholder="e.g., 25000"
+                      style={{ background: "rgba(255,255,255,0.7)" }}
                     />
                   </div>
 
                   <div className="d-grid mb-3">
                     <button
                       type="submit"
-                      className="btn btn-primary btn-lg rounded-pill fw-semibold"
+                      className="btn btn-primary btn-lg rounded-pill fw-semibold shadow"
+                      style={{
+                        background:
+                          "linear-gradient(90deg, #007bff 0%, #00c6ff 100%)",
+                        border: "none",
+                        letterSpacing: "0.03em",
+                      }}
                     >
+                      <span role="img" aria-label="plane">
+                        ✈️
+                      </span>{" "}
                       Plan Trip
                     </button>
                   </div>
@@ -143,6 +186,11 @@ const PlanTrip = () => {
                       type="button"
                       className="btn btn-outline-light rounded-pill px-4 py-2 fw-semibold"
                       onClick={() => navigate("/dashboard")}
+                      style={{
+                        border: "2px solid #fff",
+                        background: "rgba(255,255,255,0.08)",
+                        transition: "background 0.2s",
+                      }}
                     >
                       ⬅️ Back to Dashboard
                     </button>

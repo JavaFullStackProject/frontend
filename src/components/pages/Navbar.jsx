@@ -5,7 +5,7 @@
 //   const location = useLocation();
 //   const isLoggedIn = !!localStorage.getItem("token");
 
-//   // Don't show Navbar on login/register pages
+//   Don't show Navbar on login/register pages
 //   const hideOnAuthPages = ["/login", "/register"].includes(location.pathname);
 
 //   if (hideOnAuthPages) return null;
@@ -127,6 +127,11 @@ const Navbar = () => {
             <li className="nav-item">
               <Link className="nav-link fw-medium" to="/trips">
                 Trips
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link fw-medium" to="/how-it-works">
+                How It Works
               </Link>
             </li>
             <li className="nav-item">

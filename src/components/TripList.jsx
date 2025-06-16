@@ -52,34 +52,34 @@ function TripList() {
   };
 
   const deleteTrip = async (id) => {
-  if (!window.confirm("Are you sure you want to delete this trip?")) return;
+    if (!window.confirm("Are you sure you want to delete this trip?")) return;
 
-  try {
-    const token = localStorage.getItem("token");
-    await Api.delete(`/trips/${id}`, {
-      headers: { Authorization: `Bearer ${token}` },
-    });
+    try {
+      const token = localStorage.getItem("token");
+      await Api.delete(`/trips/${id}`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
 
-    setTrips((prev) => prev.filter((t) => t.id !== id));
+      setTrips((prev) => prev.filter((t) => t.id !== id));
 
-    toast.success("🗑️ Trip deleted successfully", {
-      position: "top-right",
-      autoClose: 3000,
-      pauseOnHover: true,
-      draggable: true,
-    });
-  } catch (err) {
-    toast.error("❌ Error deleting trip", {
-      position: "top-right",
-      autoClose: 4000,
-      pauseOnHover: true,
-      draggable: true,
-    });
-  }
-};
+      toast.success("🗑️ Trip deleted successfully", {
+        position: "top-right",
+        autoClose: 3000,
+        pauseOnHover: true,
+        draggable: true,
+      });
+    } catch (err) {
+      toast.error("❌ Error deleting trip", {
+        position: "top-right",
+        autoClose: 4000,
+        pauseOnHover: true,
+        draggable: true,
+      });
+    }
+  };
 
-
-  if (loading) return <p className="text-center mt-4 text-light">Loading trips...</p>;
+  if (loading)
+    return <p className="text-center mt-4 text-light">Loading trips...</p>;
 
   return (
     <div className="position-relative">
@@ -99,9 +99,14 @@ function TripList() {
       </video>
 
       {/* Blur wrapper */}
-      <div className={`container mt-5 p-5 ${isModalOpen ? "blurred" : ""}`} id="main-content">
+      <div
+        className={`container mt-5 p-5 ${isModalOpen ? "blurred" : ""}`}
+        id="main-content"
+      >
         <div className="d-flex justify-content-between align-items-center mb-4">
-          <h2 className="text-lightblack m-0"><strong>Your Trips</strong></h2>
+          <h2 className="text-lightblack m-0">
+            <strong>Your Trips</strong>
+          </h2>
           <button
             className="btn btn-primary"
             onClick={() => navigate("/plan-trip")}
@@ -130,8 +135,10 @@ function TripList() {
                 <div className="card-body bg-light bg-opacity-50">
                   <h5 className="card-title">{trip.destination}</h5>
                   <p className="card-text">
-                    <strong>Start:</strong> {trip.startDate}<br />
-                    <strong>End:</strong> {trip.endDate}<br />
+                    <strong>Start:</strong> {trip.startDate}
+                    <br />
+                    <strong>End:</strong> {trip.endDate}
+                    <br />
                     <strong>Budget:</strong> ₹{trip.budget}
                   </p>
                   <div className="d-flex justify-content-between flex-wrap gap-2">
@@ -148,7 +155,9 @@ function TripList() {
                       className="btn btn-sm btn-outline-success"
                       onClick={() => {
                         localStorage.setItem("selectedTripId", trip.id);
-                        alert(`Trip "${trip.destination}" selected for booking.`);
+                        alert(
+                          `Trip "${trip.destination}" selected for booking.`
+                        );
                       }}
                     >
                       📌 Select
@@ -197,7 +206,9 @@ function TripList() {
         <div className="modal-dialog modal-lg modal-dialog-scrollable">
           <div className="modal-content">
             <div className="modal-header">
-              <h5 className="modal-title" id="budgetModalLabel">💰 Budget Tracker</h5>
+              <h5 className="modal-title" id="budgetModalLabel">
+                💰 Budget Tracker
+              </h5>
               <button
                 type="button"
                 className="btn-close"
